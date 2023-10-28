@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'latex_output/fwp.blg'
+[39] biber:340> INFO - === Sun Oct 22, 2023, 16:36:14
+[49] Biber.pm:419> INFO - Reading 'latex_output/fwp.bcf'
+[87] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[95] Biber.pm:4419> INFO - Processing section 0
+[101] Biber.pm:4610> INFO - Looking for bibtex file 'bib/refs.bib' for section 0
+[153] Utils.pm:410> ERROR - Cannot find 'bib/refs.bib'!
+[153] Biber.pm:136> INFO - ERRORS: 1

@@ -1,0 +1,55 @@
+\ProvidesPackage{snow-preamble}
+
+\title{ Fast weight programmers implementation}
+\author{
+	Evan M Drake \\
+	\texttt{}
+}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bib/refs.bib}
+
+\usepackage{listings, xcolor, pgfplots, amsmath, amssymb, graphicx, hyperref, tikz, placeins, imakeidx,
+	empheq, placeins}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{patterns}
+
+\makeindex[columns=2, title=Index, options= -s indexstyle.ist, intoc]
+
+\graphicspath{{./img/}}
+
+\pgfplotsset{width=14cm, compat=1.18}
+
+\lstdefinestyle{code}{
+	numbers=left,
+	stepnumber=2,
+	numberstyle=\tiny,
+	numberblanklines=false,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	identifierstyle=\color{black},
+	frame=tbrl,
+	frameround=tttt,
+	backgroundcolor=\color{black!3!red!3}
+	}
+
+\lstdefinestyle{pseudocode}{
+	language=C,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	identifierstyle=\color{black},
+	frame=shadowbox,
+	rulesepcolor=\color{blue!50!green},
+	frameround=ffft,
+	}
+
+\def\backmatter{
+	\pagenumbering{Roman}
+	\setcounter{page}{1}
+	\setcounter{section}{0}
+	}
+
+\newcommand{\In}{\indent\indent}
+\newcommand{\reff}[1]{$^{\ref{#1}}$}
+
+\date{22/10/2023}
