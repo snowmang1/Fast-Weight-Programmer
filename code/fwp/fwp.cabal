@@ -1,0 +1,76 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           fwp
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/snowmang1/fwp#readme>
+homepage:       https://github.com/snowmang1/fwp#readme
+bug-reports:    https://github.com/snowmang1/fwp/issues
+author:         Evan Drake
+maintainer:     evanmdrake@icloud.com
+copyright:      Evan Drake
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/snowmang1/fwp
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_fwp
+  autogen-modules:
+      Paths_fwp
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , matrix >=0.3.6
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+  default-language: Haskell2010
+
+executable fwp-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_fwp
+  autogen-modules:
+      Paths_fwp
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , fwp
+    , matrix >=0.3.6
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+  default-language: Haskell2010
+
+test-suite fwp-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_fwp
+  autogen-modules:
+      Paths_fwp
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , fwp
+    , matrix >=0.3.6
+    , tasty >=1.4
+    , tasty-hunit >=0.10
+  default-language: Haskell2010
