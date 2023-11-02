@@ -2,6 +2,8 @@
 
 \usepackage{snow-preamble}
 
+\newtheorem{prop}{Proposition}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	\maketitle
@@ -11,14 +13,38 @@
 
 	%% body start
 
-	% what is an FWP
-	\section{}
+	\section{Objective}
+		\being{prop} \label{prop:1}
+			If a FWP and a weighted matrix are to play the same game of checkers with no training phase the FWP
+			will play more efficiently.
+		\end{prop}
 
-	% why are they usefull
+	% what is an FWP
 	\section{}
 
 	% how does it apply to graph theory
 	\section{}
+
+	% why are they usefull
+	\section{Literature Review}
+
+	% application
+	\section{Methods}
+		\subsection{American checkers rules} \label{sec:rules}
+			\begin{itemize}
+				\item played on a board perfectly latticed board
+				\item pieces can move forward unless capturing
+				\item to capture a piece must jump another piece (of opposite loyalty) diagonally forward
+				\item pieces that reach the opposite side promote to "kings"
+				\item "kings" can capture forward or backward
+			\end{itemize}
+		\subsection{Experiment states}
+			\indent The different iterations serve to symbolize different stages of internal development. I devise
+			the different stages by the amount of weakenings placed on the problem. We begin with a proposition
+			\ref{prop:1}, then create stages by applying weakenings to the problem such that proving these
+			weakened stages will bring us closer to proving our original proposition\footnote{Such is the format
+			for any complex direct proof}.
+
 
 	%% body finish
 
