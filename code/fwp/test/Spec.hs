@@ -10,24 +10,60 @@ main = defaultMain tests
 tests :: TestTree
 tests = testGroup "Tests" [matrixTests]
 
+testBoard :: [[Lib.Board]]
+testBoard = [[Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red],
+            [Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty],
+            [Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red],
+            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
+            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
+            [Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty],
+            [Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White],
+            [Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty]]
+
 matrixTests :: TestTree
 matrixTests= testGroup "Matrix type tests"
   [ testCase "Board setup" $
-    toLists Lib.setBoard @?= [[False, True, False, True, False, True, False, True],
-                                [True, False, True, False, True, False, True, False],
-                                [False, True, False, True, False, True, False, True],
-                                [False, False, False, False, False, False, False, False],
-                                [False, False, False, False, False, False, False, False],
-                                [True, False, True, False, True, False, True, False],
-                                [False, True, False, True, False, True, False, True],
-                                [True, False, True, False, True, False, True, False]],
+    toLists Lib.setBoard @?= testBoard,
     testCase "Fast matrix init" $
-    toLists (Lib.initWM Lib.setBoard) @?= [[0,0,0,0,0,0,0,0],
-                            [0,1/12,0,1/12,0,1/12,0,1/12],
-                            [1/12,0,1/12,0,1/12,0,1/12,0],
-                            [0,1/12,0,1/12,0,1/12,0,1/12],
-                            [1/12,0,1/12,0,1/12,0,1/12,0],
-                            [0,1/12,0,1/12,0,1/12,0,1/12],
-                            [1/12,0,1/12,0,1/12,0,1/12,0],
-                            [0,0,0,0,0,0,0,0]]
+    toLists (Lib.setWeights Lib.setBoard) @?= [
+                                              [(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0), --Red
+                                              (0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0)],
+                                              [(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),
+                                              (0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0)],
+                                              [(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),
+                                              (0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0)],
+
+                                              [(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0), --Middle
+                                              (0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0)],
+                                              [(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),
+                                              (0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,0.0,0.0)],
+
+                                              [(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0), --White
+                                              (0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0)],
+                                              [(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),
+                                              (0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0)],
+                                              [(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),
+                                              (0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0)]
+                                              ],
+    testCase "Map simple const test" $
+    toLists (Lib.mapBoard (fromLists testBoard) (\_ _ _ -> (1.0,0.0,0.0,0.0))) @?= [
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0), --Red
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0), --Middle
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0), --White
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)],
+                                              [(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),
+                                              (1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0),(1.0,0.0,0.0,0.0)]
+                                              ]
   ]
