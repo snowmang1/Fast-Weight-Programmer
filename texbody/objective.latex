@@ -1,0 +1,14 @@
+\textcolor{red}{Is it worth adding a diagram to this section? Or is the point clear in simple text?}
+
+\begin{prop} \label{prop:1}
+	If a SRWM and a weighted matrix are to play the same game of checkers with no training phase the SRWM
+	will play more efficiently.
+\end{prop}
+
+In proving proposition \ref{prop:1} we will have proven that for the game of American checkers a SRWM
+implemented as we do can play more efficiently than a standard weighted decision matrix. We
+will prove this by constructing both a weighted decision matrix and an SRWM and allowing them to play
+the same game of checkers. The outcome will be a proof by construction with the assumption that all
+outlier games will be ignored. \\
+In particular we aim to set ground work for the proof that an SRWM can be used as a drop in replacment
+for any weighted decision matrix.

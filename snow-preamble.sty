@@ -6,13 +6,15 @@
 	\texttt{}
 }
 
+\newcommand{\myquote}[1]{``#1''}
+\newcommand{\works}[1]{\textbf{#1\ \ }}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bib/refs.bib}
 
 \usepackage{listings, xcolor, pgfplots, amsmath, amssymb, graphicx, hyperref, tikz, placeins, imakeidx,
-	empheq, placeins}
-\usetikzlibrary{mindmap}
-\usetikzlibrary{patterns}
+	empheq, placeins, rotating}
+\usetikzlibrary{quotes, mindmap, patterns}
+\usetikzlibrary{shapes.geometric, arrows}
 
 \makeindex[columns=2, title=Index, options= -s indexstyle.ist, intoc]
 
@@ -23,7 +25,10 @@
 \lstdefinestyle{code}{
 	numbers=left,
 	stepnumber=2,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
 	numberstyle=\tiny,
+	basicstyle=\footnotesize,
 	numberblanklines=false,
 	keywordstyle=\color{blue},
 	commentstyle=\color{gray},
@@ -51,5 +56,7 @@
 
 \newcommand{\In}{\indent\indent}
 \newcommand{\reff}[1]{$^{\ref{#1}}$}
+% command will pull body files from my body dir
+\newcommand{\mybody}[1]{\input{texbody/#1.latex}}
 
 \date{22/10/2023}
