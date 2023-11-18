@@ -1,0 +1,36 @@
+\label{sec:methods}
+\subsection{American checkers rules} \label{sec:rules}
+	\begin{itemize}
+		\item played on an 8x8 American checkerboard 
+		\item 12 pieces per side
+		\item pieces can move forward unless capturing
+		\item to capture a piece one must cross another piece (of opposite loyalty) diagonally forward
+		\item pieces that reach the opposite side promote to \textit{kings}
+		\item \textit{kings} can move (as well as capture) forward or backward
+	\end{itemize}
+
+\subsection{Axiomatic strategy}
+	\indent I devise to construct a machine out of axiomatic modules, as a functional design.
+	I have defined a board and the structure of the game, building several mapping functions that
+	will progress the game, augment weights, and perform analysis. These mappings are non-bijective
+	as any board of pieces can yield many temporally subsequent boards.
+
+	\FloatBarrier
+	\begin{figure}[h]
+		\lstinputlisting[style=code, language=Haskell, firstline=41, lastline=52]{code/fwp/src/Lib.hs}
+		\caption{Haskell map function for making adjustments over any preset checkerboard}
+		\label{code:boardmap}
+	\end{figure}
+	\FloatBarrier
+
+	Utilizing mappings like the one in Figure \ref{code:boardmap} I can traverse the board in the same way
+	for all algorithms. The mapping strategy also allows for easy-to-read code as functions can be
+	built around the mapping. Weights can be adjusted with mappings however, the analysis step will require
+	a reduction function with a similar signature.
+
+\subsection{Experiment parameters}
+	\indent The experiment is conducted as a comparison between two machines, a standard weighted decision
+	matrix and an SRWM. The comparison is conducted on metrics pulled from games played. The machines will
+	not store data between games but rather will run each game as a few-shot sequence. This way of conducting
+	the experiment will allow for the most targeted testing for direct replacement of weighted decision
+	matrices in standard trials.

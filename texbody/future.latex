@@ -1,0 +1,10 @@
+\textcolor{red}{This section is not fully thought out yet, so I will be adding to this
+before the final draft.}
+\indent This work is intended to lead to a detailed study into the likelihood of SRWMs being
+able to serve as a plugin replacement for weighted decision matrices. I do not intend to make
+any proof of this point however, my intention for this research is to prompt the question
+\myquote{are they better at other things too?}. A good place for such research to start is to
+extend this experiment to a more complex game (perhaps Chess or Go). Another option is to
+expand proposition \ref{prop:1}. The current experiment utilizes only few-shot learning. A
+possible expansion is to include learning phases and attempt the same test to see if we
+observe the same results.

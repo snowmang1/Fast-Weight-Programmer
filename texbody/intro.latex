@@ -1,0 +1,22 @@
+\indent Meta-learning is a powerful tool in the presents of high training costs. Techniques like
+supervised-learning algorithms have training cost as a function of training data size. This is a
+consequence the sequential design pattern common in building these supervised-learning models
+\cite{nasteski_overview_2017},
+as seen below.
+
+\begin{itemize}
+	\item Build a model
+	\item Train the model
+	\item Use the model
+\end{itemize}
+
+Consequently there are two ways to optimize this training cost problem: shorten the training phase,
+build a faster model. Meta-learning algorithms take advantage of the first method by utilizing
+few-shot learning \cite{irie_modern_2022}, or getting rid of the training phase completely
+\cite{schmidhuber_self-referential_1993}. One such learning model is Schmidhuber's
+\textit{Self referential weighted matrix}(SRWM), it does not require a training phase
+\footnote{SRWMs do not require a training phase to begin learning, but can still benefit from them}.
+This machine can learn and adapt during experimentation. Here I will utilize an SRWM
+to play the game of American checkers\footnote{American checkers or \textit{English draughts} is
+explained in section \ref{sec:methods}}. The goal is to prove proposition \ref{prop:1} and all
+consequential propositions.

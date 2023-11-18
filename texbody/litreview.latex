@@ -1,0 +1,65 @@
+\subsection{Adaptation Based Meta-learning}
+	\In In adaptation based algorithms the underlying
+	\index{Adaptation based meta-learning}
+	data structure (usually a network or set of networks) is never changed on a large scale but
+	rather incrementally augmented until it fits the current task. Techniques using this approach
+	tend to experience similar problems such as catastrophic memory loss\footnote{Memory loss is when the 
+	learning algorithm is allowed to modify to much information and a net information loss occurs.},
+	and change scale\footnote{I define change scale as the problem of finding modification granularity}. \\
+	\works{Schmidhuber} \cite{schmidhuber_self-referential_1993}
+	introduced the idea of a self modifying network that utilizes introspection to discover
+	optimization probabilities. The idea is that given some weighted matrix
+	$M(V, E)$\footnote{Note that it is easier to think of $M$ as a network},
+	we can relate the change in weights for all E
+	temporally. At a high level, this temporal analysis will expose a sort of gradient decent
+	\index{gradient decent}
+	optimization problem \cite{irie_modern_2022}. The introspective phase is conducted with the
+	instruction of special input units that outline a manner in which to analyze the network
+	and output units that outline the modification of the matrix once analysis is complete.
+	Input and output units are designed to describe the matrix by way of time-varying activations
+	\footnote{Provided a constant stream of problems the paths taken can vary on each iteration}.
+	These activations serve to represent the connection weights and the weight modifications
+	respectively for the special input and output units. \works{Irie et al.} \cite{irie_modern_2022} shows a
+	more fine grained approach to Schmidhubers simple self modification, applying it to modern
+	neural network training techniques and providing different implementation strategies. Irie
+	et al. show the possibility that in
+	certain situations self referential weighted matrices can not only adapt their learning
+	\index{self referential weighted matrices}
+	methodologies but can also adapt the way they adapt their learning methodologies (meta-meta-learning).
+	\index{meta-learning}
+	Their self-referential weighted matrix can be described as such:
+	\begin{empheq}{align}
+		y_t, k_t, q_t, \beta_t &= \textbf{W}_{t-1}\phi(x_t) \\
+		\hat{v}_t &= \textbf{W}_{t-1}\phi(k_t) \\
+		v_t &= \textbf{W}_{t-1}\phi(q_t) \\
+		\textbf{W}_t &= \textbf{W}_{t-1} + \sigma(\beta_t)(v_t - \hat{v}_t) \otimes \phi(k_t)
+	\end{empheq}
+	"where the $\otimes$ denotes the outer product, $\sigma$ is the sigmoid function, and $\phi$
+	is an element-wise activation function whose output elements are all positive and sum up to
+	one (e.g. softmax)" \cite{irie_modern_2022}. \\
+
+	\FloatBarrier
+	\begin{figure}[h]
+		\label{fig:adapt}
+		\centering
+		\begin{tikzpicture}[node distance={15mm}, thick, main/.style = {draw, circle},
+			every edge quotes/.style = {auto, font=\footnotesize, sloped}]
+			\node[main] (n0) at (0,0) {$n_0$};
+			\node[main] (n1) at (2,-2) {$n_1$};
+			\node[main] (n0p) at (6,0) {$n_0'$};
+			\node[main] (n1p) at (8,-2) {$n_1'$};
+
+			\draw (n0) edge["$W_{01}$"] (n1)
+						(n0p) edge["$W_{01}'$"] (n1p);
+			\draw[->] (n0p) edge["$n_2\Delta$", dotted] (9,0)
+						(n0p) edge["$n_3\Delta$", dotted] (9,2);
+			\draw (3,-1) edge["$\Delta \rightarrow$"] (5,-1);
+		\end{tikzpicture}
+		\caption{$\Delta$ describes how the graph will adapt over time. Each
+		time step is associated with some problem in the constant problem stream, as the problem is solved the
+		graph will adapt in a consistent way. The consistant way is some element (or combination there of) of
+		the set of adaptation techniques, including but not limited too: \{ rewiring, attribute modification,
+		node modification\}. It is worth
+		noting that degree preservation is not (usually) a goal of algorithms in this category.}
+	\end{figure}
+	\FloatBarrier
