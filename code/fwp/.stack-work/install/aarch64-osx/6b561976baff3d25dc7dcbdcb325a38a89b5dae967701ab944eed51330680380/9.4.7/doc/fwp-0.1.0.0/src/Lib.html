@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">Lib</span><span>
+</span><span id="line-2"></span><span>    </span><span class="hs-special">(</span><span> </span><span class="annot"><a href="Lib.html#someFunc"><span class="hs-identifier">someFunc</span></a></span><span class="hs-special">,</span><span>
+</span><span id="line-3"></span><span>    </span><span class="annot"><a href="Lib.html#setBoard"><span class="hs-identifier">setBoard</span></a></span><span class="hs-special">,</span><span>
+</span><span id="line-4"></span><span>    </span><span class="annot"><a href="Lib.html#setWeights"><span class="hs-identifier">setWeights</span></a></span><span class="hs-special">,</span><span>
+</span><span id="line-5"></span><span>    </span><span class="annot"><a href="Lib.html#Player"><span class="hs-identifier">Player</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Lib.html#White"><span class="hs-identifier">White</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="Lib.html#Red"><span class="hs-identifier">Red</span></a></span><span class="hs-special">)</span><span class="hs-special">,</span><span>
+</span><span id="line-6"></span><span>    </span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier">Board</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Lib.html#Piece"><span class="hs-identifier">Piece</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="Lib.html#Empty"><span class="hs-identifier">Empty</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-7"></span><span>    </span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-8"></span><span>
+</span><span id="line-9"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><span class="hs-identifier">Data.Matrix</span></span><span>
+</span><span id="line-10"></span><span>
+</span><span id="line-11"></span><span class="hs-keyword">data</span><span> </span><span id="Player"><span class="annot"><a href="Lib.html#Player"><span class="hs-identifier hs-var">Player</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="White"><span class="annot"><a href="Lib.html#White"><span class="hs-identifier hs-var">White</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="Red"><span class="annot"><a href="Lib.html#Red"><span class="hs-identifier hs-var">Red</span></a></span></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679039356"><span id="local-6989586621679039358"><span class="annot"><span class="annottext">Player -&gt; Player -&gt; Bool
+(Player -&gt; Player -&gt; Bool)
+-&gt; (Player -&gt; Player -&gt; Bool) -&gt; Eq Player
+forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
+$c== :: Player -&gt; Player -&gt; Bool
+== :: Player -&gt; Player -&gt; Bool
+$c/= :: Player -&gt; Player -&gt; Bool
+/= :: Player -&gt; Player -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679039363"><span id="local-6989586621679039365"><span id="local-6989586621679039369"><span class="annot"><span class="annottext">Int -&gt; Player -&gt; ShowS
+[Player] -&gt; ShowS
+Player -&gt; String
+(Int -&gt; Player -&gt; ShowS)
+-&gt; (Player -&gt; String) -&gt; ([Player] -&gt; ShowS) -&gt; Show Player
+forall a.
+(Int -&gt; a -&gt; ShowS) -&gt; (a -&gt; String) -&gt; ([a] -&gt; ShowS) -&gt; Show a
+$cshowsPrec :: Int -&gt; Player -&gt; ShowS
+showsPrec :: Int -&gt; Player -&gt; ShowS
+$cshow :: Player -&gt; String
+show :: Player -&gt; String
+$cshowList :: [Player] -&gt; ShowS
+showList :: [Player] -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">)</span><span>
+</span><span id="line-12"></span><span class="hs-keyword">data</span><span> </span><span id="Board"><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-var">Board</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="Piece"><span class="annot"><a href="Lib.html#Piece"><span class="hs-identifier hs-var">Piece</span></a></span></span><span> </span><span class="annot"><a href="Lib.html#Player"><span class="hs-identifier hs-type">Player</span></a></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="Empty"><span class="annot"><a href="Lib.html#Empty"><span class="hs-identifier hs-var">Empty</span></a></span></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679039373"><span id="local-6989586621679039376"><span class="annot"><span class="annottext">Board -&gt; Board -&gt; Bool
+(Board -&gt; Board -&gt; Bool) -&gt; (Board -&gt; Board -&gt; Bool) -&gt; Eq Board
+forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
+$c== :: Board -&gt; Board -&gt; Bool
+== :: Board -&gt; Board -&gt; Bool
+$c/= :: Board -&gt; Board -&gt; Bool
+/= :: Board -&gt; Board -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679039379"><span id="local-6989586621679039384"><span id="local-6989586621679039388"><span class="annot"><span class="annottext">Int -&gt; Board -&gt; ShowS
+[Board] -&gt; ShowS
+Board -&gt; String
+(Int -&gt; Board -&gt; ShowS)
+-&gt; (Board -&gt; String) -&gt; ([Board] -&gt; ShowS) -&gt; Show Board
+forall a.
+(Int -&gt; a -&gt; ShowS) -&gt; (a -&gt; String) -&gt; ([a] -&gt; ShowS) -&gt; Show a
+$cshowsPrec :: Int -&gt; Board -&gt; ShowS
+showsPrec :: Int -&gt; Board -&gt; ShowS
+$cshow :: Board -&gt; String
+show :: Board -&gt; String
+$cshowList :: [Board] -&gt; ShowS
+showList :: [Board] -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">)</span><span>
+</span><span id="line-13"></span><span>
+</span><span id="line-14"></span><span class="hs-keyword">type</span><span> </span><span id="Weights"><span class="annot"><a href="Lib.html#Weights"><span class="hs-identifier hs-var">Weights</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span> </span><span class="hs-comment">-- cap left, cap right, forward, backward</span><span>
+</span><span id="line-15"></span><span>
+</span><span id="line-16"></span><span class="annot"><a href="Lib.html#someFunc"><span class="hs-identifier hs-type">someFunc</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
+</span><span id="line-17"></span><span id="someFunc"><span class="annot"><span class="annottext">someFunc :: IO ()
+</span><a href="Lib.html#someFunc"><span class="hs-identifier hs-var hs-var">someFunc</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; IO ()
+</span><span class="hs-identifier hs-var">putStrLn</span></span><span> </span><span class="annot"><span class="annottext">String
+</span><span class="hs-string">&quot;not ready for testing&quot;</span></span><span>
+</span><span id="line-18"></span><span>
+</span><span id="line-19"></span><span class="annot"><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-type">oscilateRow</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span class="hs-special">]</span><span>
+</span><span id="line-20"></span><span id="oscilateRow"><span class="annot"><span class="annottext">oscilateRow :: Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var hs-var">oscilateRow</span></a></span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679039392"><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039392"><span class="hs-identifier hs-var">ac</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Board] -&gt; [Board]
+forall a. [a] -&gt; [a]
+</span><span class="hs-identifier hs-var">reverse</span></span><span> </span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039392"><span class="hs-identifier hs-var">ac</span></a></span><span>
+</span><span id="line-21"></span><span class="annot"><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span id="local-6989586621679039394"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039394"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span id="local-6989586621679039395"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039395"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621679039396"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679039396"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621679039397"><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039397"><span class="hs-identifier hs-var">ac</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Integral a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-identifier hs-var">mod</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039395"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">2</span></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+forall a. Eq a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">==</span></span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039394"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039394"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039395"><span class="hs-identifier hs-var">c</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679039396"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679039396"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">Player -&gt; Board
+</span><a href="Lib.html#Piece"><span class="hs-identifier hs-var">Piece</span></a></span><span> </span><span class="annot"><span class="annottext">Player
+</span><a href="Lib.html#White"><span class="hs-identifier hs-var">White</span></a></span><span class="annot"><span class="annottext">Board -&gt; [Board] -&gt; [Board]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039397"><span class="hs-identifier hs-var">ac</span></a></span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Player -&gt; Board
+</span><a href="Lib.html#Piece"><span class="hs-identifier hs-var">Piece</span></a></span><span> </span><span class="annot"><span class="annottext">Player
+</span><a href="Lib.html#Red"><span class="hs-identifier hs-var">Red</span></a></span><span class="annot"><span class="annottext">Board -&gt; [Board] -&gt; [Board]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039397"><span class="hs-identifier hs-var">ac</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039394"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039395"><span class="hs-identifier hs-var">c</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621679039396"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Board
+</span><a href="Lib.html#Empty"><span class="hs-identifier hs-var">Empty</span></a></span><span class="annot"><span class="annottext">Board -&gt; [Board] -&gt; [Board]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039397"><span class="hs-identifier hs-var">ac</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-22"></span><span class="annot"><a href="Lib.html#setBoard"><span class="hs-identifier hs-type">setBoard</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span>
+</span><span id="line-23"></span><span id="setBoard"><span class="annot"><span class="annottext">setBoard :: Matrix Board
+</span><a href="Lib.html#setBoard"><span class="hs-identifier hs-var hs-var">setBoard</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-24"></span><span>  </span><span class="annot"><span class="annottext">[[Board]] -&gt; Matrix Board
+forall a. [[a]] -&gt; Matrix a
+</span><span class="hs-identifier hs-var">fromLists</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[[Board]]
+</span><a href="#local-6989586621679039400"><span class="hs-identifier hs-var">red</span></a></span><span> </span><span class="annot"><span class="annottext">[[Board]] -&gt; [[Board]] -&gt; [[Board]]
+forall a. [a] -&gt; [a] -&gt; [a]
+</span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[[Board]]
+</span><a href="#local-6989586621679039401"><span class="hs-identifier hs-var">mid</span></a></span><span> </span><span class="annot"><span class="annottext">[[Board]] -&gt; [[Board]] -&gt; [[Board]]
+forall a. [a] -&gt; [a] -&gt; [a]
+</span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[[Board]]
+</span><a href="#local-6989586621679039402"><span class="hs-identifier hs-var">white</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-25"></span><span>  </span><span id="local-6989586621679039400"><span class="annot"><span class="annottext">red :: [[Board]]
+</span><a href="#local-6989586621679039400"><span class="hs-identifier hs-var hs-var">red</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039403"><span class="hs-identifier hs-var">oddtile</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039404"><span class="hs-identifier hs-var">eventile</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039403"><span class="hs-identifier hs-var">oddtile</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-26"></span><span>    </span><span id="local-6989586621679039404"><span class="annot"><span class="annottext">eventile :: [Board]
+</span><a href="#local-6989586621679039404"><span class="hs-identifier hs-var hs-var">eventile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">False</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-27"></span><span>    </span><span id="local-6989586621679039403"><span class="annot"><span class="annottext">oddtile :: [Board]
+</span><a href="#local-6989586621679039403"><span class="hs-identifier hs-var hs-var">oddtile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">False</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-28"></span><span>  </span><span id="local-6989586621679039401"><span class="annot"><span class="annottext">mid :: [[Board]]
+</span><a href="#local-6989586621679039401"><span class="hs-identifier hs-var hs-var">mid</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [Board] -&gt; [[Board]]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">2</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Board -&gt; [Board]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Board
+</span><a href="Lib.html#Empty"><span class="hs-identifier hs-var">Empty</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-29"></span><span>  </span><span id="local-6989586621679039402"><span class="annot"><span class="annottext">white :: [[Board]]
+</span><a href="#local-6989586621679039402"><span class="hs-identifier hs-var hs-var">white</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039406"><span class="hs-identifier hs-var">eventile</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039407"><span class="hs-identifier hs-var">oddtile</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">[Board]
+</span><a href="#local-6989586621679039406"><span class="hs-identifier hs-var">eventile</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621679039406"><span class="annot"><span class="annottext">eventile :: [Board]
+</span><a href="#local-6989586621679039406"><span class="hs-identifier hs-var hs-var">eventile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">True</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-31"></span><span>    </span><span id="local-6989586621679039407"><span class="annot"><span class="annottext">oddtile :: [Board]
+</span><a href="#local-6989586621679039407"><span class="hs-identifier hs-var hs-var">oddtile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool -&gt; [Board] -&gt; [Board]
+</span><a href="Lib.html#oscilateRow"><span class="hs-identifier hs-var">oscilateRow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">True</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-32"></span><span>
+</span><span id="line-33"></span><span class="hs-comment">-- | 'mapBoard' is a map transform over any Matrix Board</span><span>
+</span><span id="line-34"></span><span class="hs-comment">-- where the function exposes (row -&gt; column -&gt; original matrix -&gt; index of Weighted matrix)</span><span>
+</span><span id="line-35"></span><span class="annot"><a href="Lib.html#mapBoard"><span class="hs-identifier hs-type">mapBoard</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Lib.html#Weights"><span class="hs-identifier hs-type">Weights</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Weights"><span class="hs-identifier hs-type">Weights</span></a></span><span>
+</span><span id="line-36"></span><span id="mapBoard"><span class="annot"><span class="annottext">mapBoard :: Matrix Board
+-&gt; (Int -&gt; Int -&gt; Matrix Board -&gt; Weights) -&gt; Matrix Weights
+</span><a href="Lib.html#mapBoard"><span class="hs-identifier hs-var hs-var">mapBoard</span></a></span></span><span> </span><span id="local-6989586621679039409"><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039409"><span class="hs-identifier hs-var">mb</span></a></span></span><span> </span><span id="local-6989586621679039410"><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Matrix Board -&gt; Weights
+</span><a href="#local-6989586621679039410"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+-&gt; Integer
+-&gt; Matrix Board
+-&gt; (Int -&gt; Int -&gt; Matrix Board -&gt; Weights)
+-&gt; Matrix Weights
+-&gt; Matrix Weights
+forall {p} {p} {p} {p} {p}. p -&gt; p -&gt; p -&gt; p -&gt; p -&gt; p
+</span><a href="#local-6989586621679039411"><span class="hs-identifier hs-var">mapBoardAux</span></a></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039409"><span class="hs-identifier hs-var">mb</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Matrix Board -&gt; Weights
+</span><a href="#local-6989586621679039410"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; ((Int, Int) -&gt; Weights) -&gt; Matrix Weights
+forall a. Int -&gt; Int -&gt; ((Int, Int) -&gt; a) -&gt; Matrix a
+</span><span class="hs-identifier hs-var">matrix</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Matrix Board -&gt; Int
+forall a. Matrix a -&gt; Int
+</span><span class="hs-identifier hs-var">nrows</span></span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039409"><span class="hs-identifier hs-var">mb</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Matrix Board -&gt; Int
+forall a. Matrix a -&gt; Int
+</span><span class="hs-identifier hs-var">ncols</span></span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039409"><span class="hs-identifier hs-var">mb</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span class="annot"><span class="annottext">(Int, Int)
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">)</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-37"></span><span>  </span><span id="local-6989586621679039411"><span class="annot"><span class="annottext">mapBoardAux :: p -&gt; p -&gt; p -&gt; p -&gt; p -&gt; p
+</span><a href="#local-6989586621679039411"><span class="hs-identifier hs-var hs-var">mapBoardAux</span></a></span></span><span> </span><span id="local-6989586621679039415"><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039415"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621679039416"><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039416"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621679039417"><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039417"><span class="hs-identifier hs-var">mb</span></a></span></span><span> </span><span id="local-6989586621679039418"><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039418"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679039419"><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039419"><span class="hs-identifier hs-var">wm</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">p
+</span><a href="#local-6989586621679039419"><span class="hs-identifier hs-var">wm</span></a></span><span>
+</span><span id="line-38"></span><span>
+</span><span id="line-39"></span><span class="annot"><span class="hs-comment">-- | 'setWeights' analyses the state of the current Board and adjusts the weights accordingly</span></span><span>
+</span><span id="line-40"></span><span class="annot"><a href="Lib.html#setWeights"><span class="hs-identifier hs-type">setWeights</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Board"><span class="hs-identifier hs-type">Board</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Matrix</span></span><span> </span><span class="annot"><a href="Lib.html#Weights"><span class="hs-identifier hs-type">Weights</span></a></span><span>
+</span><span id="line-41"></span><span id="setWeights"><span class="annot"><span class="annottext">setWeights :: Matrix Board -&gt; Matrix Weights
+</span><a href="Lib.html#setWeights"><span class="hs-identifier hs-var hs-var">setWeights</span></a></span></span><span> </span><span id="local-6989586621679039420"><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039420"><span class="hs-identifier hs-var">mb</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Matrix Board
+-&gt; (Int -&gt; Int -&gt; Matrix Board -&gt; Weights) -&gt; Matrix Weights
+</span><a href="Lib.html#mapBoard"><span class="hs-identifier hs-var">mapBoard</span></a></span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039420"><span class="hs-identifier hs-var">mb</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679039421"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039421"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621679039422"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039422"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621679039423"><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039423"><span class="hs-identifier hs-var">mb</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039423"><span class="hs-identifier hs-var">mb</span></a></span><span> </span><span class="annot"><span class="annottext">Matrix Board -&gt; (Int, Int) -&gt; Board
+forall a. Matrix a -&gt; (Int, Int) -&gt; a
+</span><span class="hs-operator hs-var">!</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039421"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039422"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Board -&gt; Board -&gt; Bool
+forall a. Eq a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Player -&gt; Board
+</span><a href="Lib.html#Piece"><span class="hs-identifier hs-var">Piece</span></a></span><span> </span><span class="annot"><span class="annottext">Player
+</span><a href="Lib.html#Red"><span class="hs-identifier hs-var">Red</span></a></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
+</span><span class="hs-operator hs-var">||</span></span><span> </span><span class="annot"><span class="annottext">Matrix Board
+</span><a href="#local-6989586621679039423"><span class="hs-identifier hs-var">mb</span></a></span><span> </span><span class="annot"><span class="annottext">Matrix Board -&gt; (Int, Int) -&gt; Board
+forall a. Matrix a -&gt; (Int, Int) -&gt; a
+</span><span class="hs-operator hs-var">!</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039421"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679039422"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Board -&gt; Board -&gt; Bool
+forall a. Eq a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Player -&gt; Board
+</span><a href="Lib.html#Piece"><span class="hs-identifier hs-var">Piece</span></a></span><span> </span><span class="annot"><span class="annottext">Player
+</span><a href="Lib.html#White"><span class="hs-identifier hs-var">White</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">1.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-keyword">else</span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Float
+</span><span class="hs-number">0.0</span></span><span class="hs-special">)</span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><span id="line-42"></span></pre></body></html>

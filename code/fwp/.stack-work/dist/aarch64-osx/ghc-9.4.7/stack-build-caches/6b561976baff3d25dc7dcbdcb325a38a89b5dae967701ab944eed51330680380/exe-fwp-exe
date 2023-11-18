@@ -1,0 +1,16 @@
+/Users/evandrake/.stack/programs/aarch64-osx/ghc-9.4.7/lib/ghc-9.4.7/lib/aarch64-osx-ghc-9.4.7/rts-1.0.2/include/ghcversion.h:
+  hash: ee548d48ca5c94d7c7fab127ec07be47b01afa24d6495358aa9ff6cfc8541c81
+? /Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/.stack-work/dist/aarch64-osx/ghc-9.4.7/build/fwp-exe/autogen/Paths_fwp.hs
+: hash: d8df41db6153078cf666215e9a2fce4148ae3059478024f73d3c70469428e683
+? /Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/.stack-work/dist/aarch64-osx/ghc-9.4.7/build/fwp-exe/autogen/cabal_macros.h
+: hash: c9961de6be076e270478907555f7cd1faef1c49bf795a700d1b3d3f9045ef144
+/Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/CHANGELOG.md:
+  hash: 8ce335906e10ab81e3064241960b118afe7979081e135fa3d860777c68ae8784
+/Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/README.md:
+  hash: 113f50cb7e091920bffcd62aa1c661277f4feed85dabf5219d643d9c18e3b915
+/Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/app/Main.hs:
+  hash: 1838a03922c973fbc0567035509e9519b2deeff856770be43837565c1f0efa84
+/Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/fwp.cabal:
+  hash: d73d2b9a96d98d09ab5376061a3618f645d4c55538702a9c7e8cefb905d768e3
+/Users/evandrake/Documents/Thesis/experiments/fwp/code/fwp/package.yaml:
+  hash: aa4844718fbbdbdefc897058efe183b6794124931f7871fffc7406cd6e2f9d5c
