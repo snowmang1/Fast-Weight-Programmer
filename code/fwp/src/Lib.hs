@@ -3,20 +3,29 @@ module Lib
     setBoard,
     setWeights,
     mapMat,
+    move,
     Player (White, Red),
-    Board (Piece, Empty)
+    Board (Piece, Empty),
+    MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
     ) where
 
-{-TODO:
-  - rewrite setBoard to use mapMat to setup the initial Board
-  - create map for mvmt of peices based on current weights
-  - edit distance | levenstien distance
+{-
+ TODO:
+  [ ] create move function that will facilitate movement
+    [x] simple movement
+    [ ] piece capture
+  [ ] create slow matrix
+    [ ] structure
+    [ ] analysation step
+    [ ] weight augmentation step
  -}
 
 import Data.Matrix
 
 data Player = White | Red deriving (Eq,Show)
 data Board  = Piece Player | Empty deriving (Eq,Show)
+
+data MoveType = Forward | Backward | FTakeRight | FTakeLeft | BTakeLeft | BTakeRight
 
 type Weights = (Float, Float, Float, Float) -- cap left, cap right, forward, backward
 
@@ -45,11 +54,35 @@ mapMatAux r c mb f l wm
   | otherwise = fromLists wm where
   dem = nrows mb
 
--- | 'mapMat is a map transform over any 'Matrix' a that exposes the row,column # to f
+-- | 'mapMat' is a map transform over any 'Matrix' a that exposes the row,column # to f
 -- where the function exposes (row -> column -> 'Matrix' a -> b)
 -- 'mapMat' will currently only take square matrices
 mapMat :: Matrix a -> (Int -> Int -> Matrix a -> b) -> Matrix b
 mapMat mb f = mapMatAux 0 0 mb f [] []
+
+-- | 'move' moves a single specified piece on the board with a 
+-- move takes piece location, 'MoveType'
+move :: Int -> Int -> MoveType -> Matrix Board -> Maybe (Matrix Board)
+move r c Forward m | x == Piece Red && canMoveRed r c && getElem (r+1) c m == Empty =
+                      Just (setElem Empty (r,c) (setElem x (r+1, c) m))
+                   | x == Piece White && canMoveWhite r c && getElem (r-1) c m == Empty =
+                      Just (setElem Empty (r,c) (setElem x (r-1, c) m))
+                   | otherwise = Nothing
+                   where  x = getElem r c m
+                          canMoveRed row col = row < 8 && col <= 8 && row >= 1 && col >= 1
+                          canMoveWhite row col = row <= 8 && col <= 8 && row > 1 && col >= 1
+move r c Backward m | x == Piece Red && canMoveRed r c && getElem (r-1) c m == Empty =
+                      Just (setElem Empty (r,c) (setElem x (r-1, c) m))
+                    | x == Piece White && canMoveWhite r c && getElem (r+1) c m == Empty =
+                      Just (setElem Empty (r,c) (setElem x (r+1, c) m))
+                    | otherwise = Nothing
+                    where x = getElem r c m
+                          canMoveRed row col = row <= 8 && col <= 8 && row > 1 && col >= 1
+                          canMoveWhite row col = row < 8 && col <= 8 && row >= 1 && col >= 1
+move r c FTakeRight m = Nothing
+move r c FTakeLeft m = Nothing
+move r c BTakeRight m = Nothing
+move r c BTakeLeft m = Nothing
 
 -- | 'setWeights' analyses the state of the current Board and adjusts the weights accordingly
 setWeights :: Matrix Board -> Matrix Weights
