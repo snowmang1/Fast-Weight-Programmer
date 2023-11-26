@@ -4,7 +4,7 @@ import Test.Tasty.HUnit
 import Data.Matrix
 import qualified Lib
 
-import OpTests (moveTests, testBoard, captureTests)
+import OpTests (moveTests, testBoard, captureTests, startBoard)
 
 main :: IO ()
 main = defaultMain tests
@@ -15,7 +15,7 @@ tests = testGroup "Tests" [matrixTests, moveTests, captureTests]
 matrixTests :: TestTree
 matrixTests= testGroup "Matrix type tests"
   [ testCase "Board setup" $
-    toLists Lib.setBoard @?= testBoard,
+    toLists Lib.setBoard @?= startBoard,
     testCase "Fast matrix init" $
     toLists (Lib.setWeights Lib.setBoard) @?= [
                                               [(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0), --Red
