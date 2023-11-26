@@ -1,29 +1,21 @@
 import Test.Tasty
 import Test.Tasty.HUnit
 
-import qualified Lib
 import Data.Matrix
+import qualified Lib
+
+import OpTests (moveTests, testBoard, captureTests, startBoard)
 
 main :: IO ()
 main = defaultMain tests
 
 tests :: TestTree
-tests = testGroup "Tests" [matrixTests]
-
-testBoard :: [[Lib.Board]]
-testBoard = [[Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red],
-            [Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty],
-            [Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red, Lib.Empty, Lib.Piece Lib.Red],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
-            [Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty],
-            [Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White],
-            [Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty, Lib.Piece Lib.White, Lib.Empty]]
+tests = testGroup "Tests" [matrixTests, moveTests, captureTests]
 
 matrixTests :: TestTree
 matrixTests= testGroup "Matrix type tests"
   [ testCase "Board setup" $
-    toLists Lib.setBoard @?= testBoard,
+    toLists Lib.setBoard @?= startBoard,
     testCase "Fast matrix init" $
     toLists (Lib.setWeights Lib.setBoard) @?= [
                                               [(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0),(0.0,0.0,0.0,0.0),(0.0,0.0,1.0,0.0), --Red
