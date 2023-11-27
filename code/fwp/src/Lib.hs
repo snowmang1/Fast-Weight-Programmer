@@ -1,27 +1,24 @@
 module Lib
-    ( someFunc,
+    (
+    someFunc,
     setBoard,
     setWeights,
     mapMat,
     move,
-    Board (White, Red, Empty),
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
     ) where
 
 {-
  TODO:
-  [ ] create move function that will facilitate movement
-    [x] simple movement
-    [ ] piece capture
+  [x] add King functionality to pieces
   [ ] create slow matrix
     [ ] structure
     [ ] analysation step
     [ ] weight augmentation step
  -}
 
+import Board (Board (Red, White, WhiteKing, RedKing, Empty))
 import Data.Matrix
-
-data Board  = White | Red | Empty deriving (Eq,Show)
 
 data MoveType = Forward | Backward | FTakeRight | FTakeLeft | BTakeLeft | BTakeRight
 
@@ -72,9 +69,9 @@ move r c Forward m | x == Red && canMoveRed r c && getElem (r+1) c m == Empty =
                           canMoveRed row col = row < 8 && col <= 8 && row >= 1 && col >= 1
                           canMoveWhite row col = row <= 8 && col <= 8 && row > 1 && col >= 1
 
-move r c Backward m | x == Red && canMoveRed r c && getElem (r-1) c m == Empty =
+move r c Backward m | x == RedKing && canMoveRed r c && getElem (r-1) c m == Empty =
                       Just (setElem Empty (r,c) (setElem x (r-1, c) m))
-                    | x == White && canMoveWhite r c && getElem (r+1) c m == Empty =
+                    | x == WhiteKing && canMoveWhite r c && getElem (r+1) c m == Empty =
                       Just (setElem Empty (r,c) (setElem x (r+1, c) m))
                     | otherwise = Nothing
                     where x = getElem r c m
@@ -99,18 +96,18 @@ move r c FTakeLeft m  | x == Red && canTake r c =
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row+1) (col-1) m /= Empty || getElem (row+1) (col+1) m /= Empty)
 
-move r c BTakeRight m | x == Red && canTake r c =
+move r c BTakeRight m | x == RedKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r-1, c-1) (setElem x (r-2,c-2) m)))
-                      | x == White && canTake r c =
+                      | x == WhiteKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r+1, c+1) (setElem x (r+2,c+2) m)))
                       | otherwise = Nothing
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
 
-move r c BTakeLeft m | x == Red && canTake r c =
+move r c BTakeLeft m | x == RedKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r-1, c+1) (setElem x (r-2,c+2) m)))
-                     | x == White && canTake r c =
+                     | x == WhiteKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r+1, c-1) (setElem x (r+2,c-2) m)))
                      | otherwise = Nothing
                         where x = getElem r c m

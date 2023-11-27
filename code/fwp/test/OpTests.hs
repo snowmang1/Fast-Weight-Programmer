@@ -11,38 +11,39 @@ import Test.Tasty
 import Test.Tasty.HUnit
 
 import qualified Lib
+import qualified Board
 
-forwardRed :: Int -> Int -> Matrix Lib.Board
-forwardRed r c = setElem Lib.Empty (r,c) (setElem Lib.Red (r+1,c) (fromLists testBoard))
+forwardRed :: Int -> Int -> Matrix Board.Board
+forwardRed r c = setElem Board.Empty (r,c) (setElem Board.Red (r+1,c) (fromLists testBoard))
 
-forwardWhite :: Int -> Int -> Matrix Lib.Board
-forwardWhite r c = setElem Lib.Empty (r,c) (setElem Lib.White (r-1,c) (fromLists testBoard))
+forwardWhite :: Int -> Int -> Matrix Board.Board
+forwardWhite r c = setElem Board.Empty (r,c) (setElem Board.White (r-1,c) (fromLists testBoard))
 
-backwardRed :: Int -> Int -> Matrix Lib.Board
-backwardRed r c = setElem Lib.Empty (r,c) (setElem Lib.Red (r-1,c) (fromLists testBoard))
+backwardRed :: Int -> Int -> Matrix Board.Board
+backwardRed r c = setElem Board.Empty (r,c) (setElem Board.RedKing (r-1,c) (fromLists testBoard))
 
-backwardWhite :: Int -> Int -> Matrix Lib.Board
-backwardWhite r c = setElem Lib.Empty (r,c) (setElem Lib.White (r+1,c) (fromLists testBoard))
+backwardWhite :: Int -> Int -> Matrix Board.Board
+backwardWhite r c = setElem Board.Empty (r,c) (setElem Board.WhiteKing (r+1,c) (fromLists testBoard))
 
-startBoard :: [[Lib.Board]]
-startBoard = [[Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red],
-            [ Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty],
-            [Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty],
-            [Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty]]
+startBoard :: [[Board.Board]]
+startBoard = [[Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
+            [ Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
+            [Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
+            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty],
+            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty],
+            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
+            [Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White],
+            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
 
-testBoard :: [[Lib.Board]]
-testBoard = [[Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red],
-            [ Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty],
-            [Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty,  Lib.White],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty,  Lib.Red, Lib.Empty],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty],
-            [Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty]]
+testBoard :: [[Board.Board]]
+testBoard = [[Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
+            [ Board.Red, Board.Empty,  Board.RedKing, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
+            [Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
+            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.White],
+            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.Red, Board.Empty],
+            [ Board.White, Board.Empty,  Board.WhiteKing, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
+            [Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White],
+            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
 
 moveTests :: TestTree
 moveTests = testGroup "movement tests"
@@ -76,30 +77,30 @@ moveTests = testGroup "movement tests"
   Lib.move 8 1 Lib.Backward (fromLists testBoard) @?= Nothing
   ]
 
-captureBoard :: [[Lib.Board]]
-captureBoard = [[Lib.Empty, Lib.Red, Lib.Empty, Lib.Red, Lib.Empty, Lib.Red, Lib.Empty, Lib.Red],
-            [Lib.Red, Lib.Empty, Lib.White, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty],
-            [Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.Red],
-            [Lib.Empty, Lib.Empty,  Lib.White, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty],
-            [Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty, Lib.Empty,  Lib.Red, Lib.Empty, Lib.Empty],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty],
-            [Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.Red, Lib.Empty,  Lib.White],
-            [ Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty,  Lib.White, Lib.Empty]]
+captureBoard :: [[Board.Board]]
+captureBoard = [[Board.Empty, Board.Red, Board.Empty, Board.Red, Board.Empty, Board.Red, Board.Empty, Board.Red],
+            [Board.Red, Board.Empty, Board.WhiteKing, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
+            [Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
+            [Board.Empty, Board.Empty,  Board.White, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty],
+            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.Red, Board.Empty, Board.Empty],
+            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
+            [Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.RedKing, Board.Empty,  Board.White],
+            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
 
 -- | row column direction-{0, 1, 2, 3} 0 for right and 1 for left. 2,3 for backward directions respective
-captureRed:: Int -> Int -> Int -> Matrix Lib.Board
-captureRed r c d | d == 0 = setElem Lib.Empty (r+1,c+1) (setElem Lib.Empty (r,c) (setElem Lib.Red (r+2,c+2) (fromLists captureBoard)))
-                 | d == 1 = setElem Lib.Empty (r+1,c-1) (setElem Lib.Empty (r,c) (setElem Lib.Red (r+2,c-2) (fromLists captureBoard)))
-                 | d == 2 = setElem Lib.Empty (r-1,c-1) (setElem Lib.Empty (r,c) (setElem Lib.Red (r-2,c-2) (fromLists captureBoard)))
-                 | d == 3 = setElem Lib.Empty (r-1,c+1) (setElem Lib.Empty (r,c) (setElem Lib.Red (r-2,c+2) (fromLists captureBoard)))
+captureRed:: Int -> Int -> Int -> Matrix Board.Board
+captureRed r c d | d == 0 = setElem Board.Empty (r+1,c+1) (setElem Board.Empty (r,c) (setElem Board.Red (r+2,c+2) (fromLists captureBoard)))
+                 | d == 1 = setElem Board.Empty (r+1,c-1) (setElem Board.Empty (r,c) (setElem Board.Red (r+2,c-2) (fromLists captureBoard)))
+                 | d == 2 = setElem Board.Empty (r-1,c-1) (setElem Board.Empty (r,c) (setElem Board.RedKing (r-2,c-2) (fromLists captureBoard)))
+                 | d == 3 = setElem Board.Empty (r-1,c+1) (setElem Board.Empty (r,c) (setElem Board.RedKing (r-2,c+2) (fromLists captureBoard)))
                  | otherwise = fromLists captureBoard
 
 -- | row column direction-{0, 1, 2, 3} 0 for right and 1 for left. 2,3 for backward directions respective
-captureWhite:: Int -> Int -> Int -> Matrix Lib.Board
-captureWhite r c d | d == 0 = setElem Lib.Empty (r-1,c+1) (setElem Lib.Empty (r,c) (setElem Lib.White (r-2,c+2) (fromLists captureBoard)))
-                   | d == 1 = setElem Lib.Empty (r-1,c-1) (setElem Lib.Empty (r,c) (setElem Lib.White (r-2,c-2) (fromLists captureBoard)))
-                   | d == 2 = setElem Lib.Empty (r+1,c+1) (setElem Lib.Empty (r,c) (setElem Lib.White (r+2,c+2) (fromLists captureBoard)))
-                   | d == 3 = setElem Lib.Empty (r+1,c-1) (setElem Lib.Empty (r,c) (setElem Lib.White (r+2,c-2) (fromLists captureBoard)))
+captureWhite:: Int -> Int -> Int -> Matrix Board.Board
+captureWhite r c d | d == 0 = setElem Board.Empty (r-1,c+1) (setElem Board.Empty (r,c) (setElem Board.White (r-2,c+2) (fromLists captureBoard)))
+                   | d == 1 = setElem Board.Empty (r-1,c-1) (setElem Board.Empty (r,c) (setElem Board.White (r-2,c-2) (fromLists captureBoard)))
+                   | d == 2 = setElem Board.Empty (r+1,c+1) (setElem Board.Empty (r,c) (setElem Board.WhiteKing (r+2,c+2) (fromLists captureBoard)))
+                   | d == 3 = setElem Board.Empty (r+1,c-1) (setElem Board.Empty (r,c) (setElem Board.WhiteKing (r+2,c-2) (fromLists captureBoard)))
                    | otherwise = fromLists captureBoard
 
 -- red right => - column, red left => + column

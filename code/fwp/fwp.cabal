@@ -25,7 +25,9 @@ source-repository head
 
 library
   exposed-modules:
+      Board
       Lib
+      Slow
   other-modules:
       Paths_fwp
   autogen-modules:
