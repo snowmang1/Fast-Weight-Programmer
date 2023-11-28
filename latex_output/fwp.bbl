@@ -1,0 +1,194 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{irie_modern_2022}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=a6d632a869d9349cc7edad8941138455}{%
+           family={Irie},
+           familyi={I\bibinitperiod},
+           given={Kazuki},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b1f22cfa1f8c8f5aea7f45e6a6614d53}{%
+           family={Schlag},
+           familyi={S\bibinitperiod},
+           given={Imanol},
+           giveni={I\bibinitperiod}}}%
+        {{hash=612fda6a225fc99663b98d48443de287}{%
+           family={Csordás},
+           familyi={C\bibinitperiod},
+           given={Róbert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{720801232b607d9b01848ef506212d11}
+      \strng{fullhash}{428ee28cbfbb751f567f156f1382f3a6}
+      \strng{bibnamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authorbibnamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authornamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authorfullhash}{428ee28cbfbb751f567f156f1382f3a6}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The weight matrix ({WM}) of a neural network ({NN}) is its program. The programs of many traditional {NNs} are learned through gradient descent in some error function, then remain fixed. The {WM} of a self-referential {NN}, however, can keep rapidly modifying all of itself during runtime. In principle, such {NNs} can meta-learn to learn, and meta-meta-learn to meta-learn to learn, and so on, in the sense of recursive self-improvement. While {NN} architectures potentially capable of implementing such behaviour have been proposed since the '90s, there have been few if any practical studies. Here we revisit such {NNs}, building upon recent successes of fast weight programmers and closely related linear Transformers. We propose a scalable self-referential {WM} ({SRWM}) that learns to use outer products and the delta update rule to modify itself. We evaluate our {SRWM} in supervised few-shot learning and in multi-task reinforcement learning with procedurally generated game environments. Our experiments demonstrate both practical applicability and competitive performance of the proposed {SRWM}. Our code is public.}
+      \field{annotation}{Irie takes the introspective abstract scheme that Schmidhuber derived and expands on it. Utilizing rising research in fast weight programmers the authors gives an instructional approach to how the introspective phase works. In an effort to make obvious the claim that ``this {SRWM} can replace any weighted matrix'' the authors illustrate high level schemes of the machine in the form of black-box diagrams. The authors of this paper emphasize the concept of domain specific (and general) adaption of the algorithm. through standard training practice the authors demonstrate the effectiveness of introspective adaption in which the algorithm can change the way it learns over time by realizing certain patterns. This paper serves as the latest example of a meta learning algorithm that is both possible and probable to implement in the real world.}
+      \field{day}{17}
+      \field{eprinttype}{arxiv}
+      \field{month}{6}
+      \field{number}{{arXiv}:2202.05780}
+      \field{title}{A Modern Self-Referential Weight Matrix That Learns to Modify Itself}
+      \field{urlday}{23}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2202.05780
+      \endverb
+      \verb{eprint}
+      \verb 2202.05780 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/evandrake/Zotero/storage/KTLQIIBZ/Irie et al. - 2022 - A Modern Self-Referential Weight Matrix That Learn.pdf:application/pdf;arXiv.org Snapshot:/Users/evandrake/Zotero/storage/2UEIXWYY/2202.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2202.05780
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2202.05780
+      \endverb
+      \keyw{self-reference,self modification,fast weight programmer,introspective,adaptive learning}
+    \endentry
+    \entry{nasteski_overview_2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e6bbb75697632400df408638a9a333ef}{%
+           family={Nasteski},
+           familyi={N\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6bbb75697632400df408638a9a333ef}
+      \strng{fullhash}{e6bbb75697632400df408638a9a333ef}
+      \strng{bibnamehash}{e6bbb75697632400df408638a9a333ef}
+      \strng{authorbibnamehash}{e6bbb75697632400df408638a9a333ef}
+      \strng{authornamehash}{e6bbb75697632400df408638a9a333ef}
+      \strng{authorfullhash}{e6bbb75697632400df408638a9a333ef}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the last decade a large number of supervised learning methods have been introduced in the field of the machine learning. Supervised learning became an area for a lot of research activity in machine learning. Many of the supervised learning techniques have found application in their processing and analyzing variety of data. One of the main characteristics is that the supervised learning has the ability of annotated training data. The so called labels are class labels in the classification process. There is a variety of algorithms that are used in the supervised learning methods. This paper summarizes the fundamental aspects of couple of supervised methods. The main goal and contribution of this review paper is to present the overview of machine learning and provide machine learning techniques.}
+      \field{day}{15}
+      \field{journaltitle}{{HORIZONS}.B}
+      \field{month}{12}
+      \field{shortjournal}{{HORIZONS}.B}
+      \field{title}{An overview of the supervised machine learning methods}
+      \field{volume}{4}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{51\bibrangedash 62}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.20544/HORIZONS.B.04.1.17.P05
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/evandrake/Zotero/storage/T53DQ6Z7/Nasteski - 2017 - An overview of the supervised machine learning met.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{schmidhuber_self-referential_1993}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=07e9fb186fd9976e6be82e64365dc308}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=cbb1d3f9127f398a0befb6486e93a50f}{%
+           family={Gielen},
+           familyi={G\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9ea41a6026eb784144ba9598ae7e1de9}{%
+           family={Kappen},
+           familyi={K\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{fullhash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{bibnamehash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{authorbibnamehash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{authornamehash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{authorfullhash}{07e9fb186fd9976e6be82e64365dc308}
+      \strng{editorbibnamehash}{e529d4e7240fdf7852fad9d5d420fd07}
+      \strng{editornamehash}{e529d4e7240fdf7852fad9d5d420fd07}
+      \strng{editorfullhash}{e529d4e7240fdf7852fad9d5d420fd07}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Weight modi cations in traditional neural nets are computed by hard-wired algorithms. Without exception, all previous weight change algorithms have many speci c limitations. Is it (in principle) possible to overcome limitations of hard-wired algorithms by allowing neural nets to run and improve their own weight change algorithms? This paper constructively demonstrates that the answer (in principle) is `yes'. I derive an initial gradientbased sequence learning algorithm for a `self-referential' recurrent network that can `speak' about its own weight matrix in terms of activations. It uses some of its input and output units for observing its own errors and for explicitly analyzing and modifying its own weight matrix, including those parts of the weight matrix responsible for analyzing and modifying the weight matrix. The result is the rst `introspective' neural net with explicit potential control over all of its own adaptive parameters. A disadvantage of the algorithm is its high computational complexity per time step which is independent of the sequence length and equals O(nconnlognconn), where nconn is the number of connections. Another disadvantage is the high number of local minima of the unusually complex error surface. The purpose of this paper, however, is not to come up with the most e cient `introspective' or `self-referential' weight change algorithm, but to show that such algorithms are possible at all.}
+      \field{annotation}{Schmidhuber compares the meta learning style of humans to that of an introspective self modifying network. networks are temporally aware specialized input and output information contain the data for how a matrix would know how to change and how it should change respectively. algorithm: an address is given to each connection of the network. providing the network with output units for addressing all of its own connections (including the connections for addressing other connections) by means of time-varying activation patterns providing input units whose activation's become the weights of the connections currently addressed by the network provide output units whose time-varying activation's serve to quickly change the weights of connections addressed by the network. Schmidhuber gives an abstract definition of a possible implementation of his {SRWM}.This paper is referentially useful as the origin point of {SRWM} notation and syntax.}
+      \field{booktitle}{{ICANN} '93}
+      \field{isbn}{978-3-540-19839-0 978-1-4471-2063-6}
+      \field{langid}{english}
+      \field{title}{A `Self-Referential' Weight Matrix}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{446\bibrangedash 450}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-2063-6_107
+      \endverb
+      \verb{file}
+      \verb document.pdf:/Users/evandrake/Zotero/storage/EQMS5QBG/document.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://mediatum.ub.tum.de/doc/814784/document.pdf
+      \endverb
+      \verb{url}
+      \verb https://mediatum.ub.tum.de/doc/814784/document.pdf
+      \endverb
+      \keyw{self-reference,self modification,fast weight programmer,adaptive learning}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

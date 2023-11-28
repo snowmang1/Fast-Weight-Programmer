@@ -8,3 +8,12 @@
 **.run.xml
 **.toc
 **.key
+latex_output/fwp.aux
+latex_output/fwp.bbl
+latex_output/fwp.bcf
+latex_output/fwp.blg
+latex_output/fwp.idx
+latex_output/fwp.log
+latex_output/fwp.out
+latex_output/fwp.run.xml
+latex_output/fwp.toc

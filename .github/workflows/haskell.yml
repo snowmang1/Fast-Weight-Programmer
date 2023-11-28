@@ -1,5 +1,8 @@
 name: Haskell CI
 
+# FIX:
+# need to only test inside the valid code/fwp directory
+
 on:
   push:
     branches: ["THE-61"]
