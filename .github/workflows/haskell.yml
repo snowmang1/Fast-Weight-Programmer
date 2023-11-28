@@ -21,4 +21,4 @@ jobs:
       - name: Stack setup
         run: stack upgrade
       - name: Test
-        run: stack test
+        run: ls && stack test
