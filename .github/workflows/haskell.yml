@@ -16,8 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          path: 'code/fwp/'
+          sparse-checkout: 'code/fwp'
+          sparse-checkout-cone-mode: false
       - name: Stack setup
         run: stack upgrade
       - name: Test
-        run: cd code/fwp/ && stack test
+        run: stack test
