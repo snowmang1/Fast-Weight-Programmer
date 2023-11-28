@@ -1,3 +1,4 @@
 # fwp
-- Research project for connected to my thesis.
+- Research project connected to my thesis.
 - This project will be dedicated to applying the concept of fast weight programmers to the simple weakly solved game of checkers.
+- more information can be found in the paper on the top level of the repo
