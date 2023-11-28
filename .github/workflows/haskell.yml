@@ -15,6 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          path: 'code/fwp'
       - name: Stack setup
         run: stack upgrade
       - name: Test
