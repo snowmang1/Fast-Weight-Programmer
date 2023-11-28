@@ -8,15 +8,6 @@ module Lib
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
     ) where
 
-{-
- TODO:
-  [x] add King functionality to pieces
-  [ ] create slow matrix
-    [ ] structure
-    [ ] analysation step
-    [ ] weight augmentation step
- -}
-
 import Board (Board (Red, White, WhiteKing, RedKing, Empty))
 import Data.Matrix
 
