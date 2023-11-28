@@ -21,4 +21,4 @@ jobs:
       - name: Stack setup
         run: stack upgrade
       - name: Test
-        run: ls
+        run: cd code/fwp && ls
