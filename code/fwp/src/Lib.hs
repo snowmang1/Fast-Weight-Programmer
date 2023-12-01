@@ -2,10 +2,10 @@ module Lib
     (
     someFunc,
     setBoard,
-    setWeights,
     mapMat,
     move,
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
+    Weights,
     ) where
 
 import Board (Board (Red, White, WhiteKing, RedKing, Empty))
@@ -13,7 +13,8 @@ import Data.Matrix
 
 data MoveType = Forward | Backward | FTakeRight | FTakeLeft | BTakeLeft | BTakeRight
 
-type Weights = (Float, Float, Float, Float) -- cap left, cap right, forward, backward
+-- | forward backward cap-left cap-right cap-back-left cap-back-right
+type Weights = (Float, Float, Float, Float, Float, Float)
 
 someFunc :: IO ()
 someFunc = putStrLn "not ready for testing"
@@ -104,7 +105,3 @@ move r c BTakeLeft m | x == RedKing && canTake r c =
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
-
--- | 'setWeights' analyses the state of the current Board and adjusts the weights accordingly
-setWeights :: Matrix Board -> Matrix Weights
-setWeights mb_t = mapMat mb_t (\r c mb -> if mb!(r,c) == Red || mb!(r,c) == White then (0.0,0.0,1.0,0.0) else (0.0,0.0,0.0,0.0))

@@ -1,4 +1,4 @@
-module OpTests(
+module MvTests(
   testBoard,
   moveTests,
   captureTests,
