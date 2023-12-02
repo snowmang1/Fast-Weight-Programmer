@@ -9,10 +9,10 @@ import Lib (Weights)
 import Data.Matrix
 
 {-TODO:
-  [ ] analzeWin function
+  [x] analzeWin function
     - eliminate impossible play
     - modulate for better play
-  [ ] modulate weighted matrix
+  [x] modulate weighted matrix
     - function for map that can modulate the existing weights of
       the current weight matrix (same type as analyzeWin)
 -}
@@ -24,7 +24,7 @@ mapWeights :: Matrix Board -> Matrix Weights -> (Int -> Int -> Matrix Board -> W
 mapWeights = recMap 1 1 where
   recMap r c b w f
     | r <= dem && c < dem = recMap r (c+1) b (setElem (f r c b) (r,c) w) f
-    | r <= dem && c == dem = recMap (r+1) 0 b (setElem (f r c b) (r,c) w) f
+    | r <= dem && c == dem = recMap (r+1) 1 b (setElem (f r c b) (r,c) w) f
     | otherwise = w where
       dem = nrows b
 
@@ -48,14 +48,16 @@ botL (row,col,mat,(_,_,_,_,_,_)) = if getElem (row+1) (col-1) mat == opposite ro
 -- \ both 'modulateK' & 'modulate' do the same thing with respect to whether or not something is a king
 modulateK :: (Int,Int,Matrix Board,Weights) -> Weights
 modulateK (_,_,_,x) = mod8 (raise x)
-  where mod8 (for,bac,cfl,cfr,cbl,cbr) = let total = tot (for,bac,cfl,cfr,cbl,cbr) in (for/total,bac/total,cfl/total,cfr/total,cbl/total,cbr/total)
-          where tot tup = first tup + sec tup + third tup + fourth tup + fifth tup + sixth tup
+  where mod8 (for,bac,cfl,cfr,cbl,cbr) = let total = denom (for,bac,cfl,cfr,cbl,cbr) in (for/total,bac/total,cfl/total,cfr/total,cbl/total,cbr/total)
+          where denom = zero_check . tot
+                tot tup = first tup + sec tup + third tup + fourth tup + fifth tup + sixth tup
                   where first   (y,_,_,_,_,_) = y
                         sec     (_,y,_,_,_,_) = y
                         third   (_,_,y,_,_,_) = y
                         fourth  (_,_,_,y,_,_) = y
                         fifth   (_,_,_,_,y,_) = y
                         sixth   (_,_,_,_,_,y) = y
+                zero_check i = if i /= 0 then i else 1
         raise = fb . takef . takeb
         fb (for,bac,cfl,cfr,cbl,cbr)
           | bac == 1 && for == 1  = (0,1,cfl,cfr,cbl,cbr)
@@ -77,15 +79,14 @@ modulateK (_,_,_,x) = mod8 (raise x)
 -- create an x<1 probability that will tend towards piece capture
 modulate :: (Int,Int,Matrix Board,Weights) -> Weights
 modulate (_,_,_,(for,_,cfl,cfr,_,_))
-  | for == 1 && cfl == 1 && cfr == 1 = (0.20,0,0.40,40,0,0)
+  | for == 1 && cfl == 1 && cfr == 1 = (0.20,0,0.40,0.40,0,0)
   | for == 0 && cfl == 1 && cfr == 1 = (0,0,0.50,0.50,0,0)
   | for == 1 && cfl == 0 && cfr == 1 = (0.25,0,0,0.75,0,0)
   | for == 0 && cfl == 0 && cfr == 1 = (0,0,0,1,0,0)
   | for == 1 && cfl == 1 && cfr == 0 = (0.25,0,0.75,0,0,0)
   | for == 0 && cfl == 1 && cfr == 0 = (0,0,1,0,0,0)
   | for == 1 && cfl == 0 && cfr == 0 = (1,0,0,0,0,0)
-  | for == 0 && cfl == 0 && cfr == 0 = (0,0,0,0,0,0)
-  | otherwise = undefined
+  | otherwise                        = (0,0,0,0,0,0)
 
 -- | single window analysis. take a window and make decisions based on the center piece.
 -- form opinion in the form of a set of weights, function designed for 'mapWeights'
@@ -112,6 +113,8 @@ analyzeWin r c m
           | not leftedge && rightedge && not topedge && not botedge     = (r,c,m,(top t, bot t, topL t, 0, botL t, 0))
           | not leftedge && rightedge && topedge && not botedge         = (r,c,m,(0, bot t, 0, 0, botL t, 0))
           | not leftedge && rightedge && not topedge && botedge         = (r,c,m,(top t, 0, topL t, 0, 0, 0))
+          | not leftedge && not rightedge && topedge && not botedge     = (r,c,m,(0, bot t, 0, 0, botL t, botR t))
+          | not leftedge && not rightedge && not topedge && botedge     = (r,c,m,(top t, 0, topL t, topR t, 0, 0))
           | otherwise = undefined
         checkBoardR t
           | not leftedge && not rightedge && not topedge && not botedge = (r,c,m,(bot t, top t, botR t, botL t, topR t, topL t))
@@ -121,8 +124,10 @@ analyzeWin r c m
           | not leftedge && rightedge && not topedge && not botedge     = (r,c,m,(bot t, top t, 0, botL t, 0, topL t))
           | not leftedge && rightedge && not topedge && botedge         = (r,c,m,(0, top t, 0, 0, 0, topL t))
           | not leftedge && rightedge && topedge && not botedge         = (r,c,m,(bot t, 0, 0, 0, botL t, 0))
+          | not leftedge && not rightedge && topedge && not botedge     = (r,c,m,(bot t, 0, botR t, botL t, 0, 0))
+          | not leftedge && not rightedge && not topedge && botedge     = (r,c,m,(0, top t, 0, 0, topR t, topL t))
           | otherwise = undefined
 
--- | analyzation step ran by the slow matrix on each itteration
-analyzeBoard :: Matrix Board -> Maybe (Matrix Board)
-analyzeBoard _ = undefined
+-- | convience function serving the purpose of slow matrix analyzation
+analyzeBoard :: Matrix Board -> Matrix Weights -> Matrix Weights
+analyzeBoard m w = mapWeights m w analyzeWin

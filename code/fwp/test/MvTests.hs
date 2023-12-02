@@ -26,24 +26,24 @@ backwardWhite :: Int -> Int -> Matrix Board.Board
 backwardWhite r c = setElem Board.Empty (r,c) (setElem Board.WhiteKing (r+1,c) (fromLists testBoard))
 
 startBoard :: [[Board.Board]]
-startBoard = [[Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
-            [ Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
-            [Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
-            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty],
-            [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty],
-            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
-            [Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White],
-            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
+startBoard = [[Board.Empty,   Board.Red, Board.Empty,   Board.Red,  Board.Empty,   Board.Red,  Board.Empty,    Board.Red],
+              [Board.Red,   Board.Empty,   Board.Red, Board.Empty,    Board.Red, Board.Empty,    Board.Red,  Board.Empty],
+              [Board.Empty,   Board.Red, Board.Empty,   Board.Red,  Board.Empty,   Board.Red,  Board.Empty,    Board.Red],
+              [Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.Empty, Board.Empty,  Board.Empty,  Board.Empty],
+              [Board.Empty, Board.Empty, Board.Empty, Board.Empty,   Board.Empty,Board.Empty,  Board.Empty,  Board.Empty],
+              [Board.White, Board.Empty, Board.White, Board.Empty,   Board.White,Board.Empty,  Board.White,  Board.Empty],
+              [Board.Empty, Board.White, Board.Empty, Board.White,   Board.Empty,Board.White,  Board.Empty,  Board.White],
+              [Board.White, Board.Empty,  Board.White,Board.Empty,   Board.White,Board.Empty,  Board.White, Board.Empty]]
 
 testBoard :: [[Board.Board]]
 testBoard = [[Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
-            [ Board.Red, Board.Empty,  Board.RedKing, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
+            [Board.Red, Board.Empty,  Board.RedKing, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty],
             [Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red, Board.Empty,  Board.Red],
             [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.White],
             [Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.Red, Board.Empty],
-            [ Board.White, Board.Empty,  Board.WhiteKing, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
+            [Board.White, Board.Empty,  Board.WhiteKing, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty],
             [Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White],
-            [ Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
+            [Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty,  Board.White, Board.Empty]]
 
 moveTests :: TestTree
 moveTests = testGroup "movement tests"

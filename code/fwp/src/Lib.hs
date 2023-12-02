@@ -6,6 +6,7 @@ module Lib
     move,
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
     Weights,
+    winGame,
     ) where
 
 import Board (Board (Red, White, WhiteKing, RedKing, Empty))
@@ -105,3 +106,20 @@ move r c BTakeLeft m | x == RedKing && canTake r c =
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
+
+winGame :: Matrix Board -> Maybe Board
+winGame m = aux ((countWhite :: Int -> Int -> Int -> Matrix Board -> Int) 0 1 1 m)
+                ((countRed :: Int -> Int -> Int -> Matrix Board -> Int) 0 1 1 m)
+  where aux cw cr
+          | cw <  0 && cr <  0 = Just WhiteKing
+          | cw >  0 && cr == 0 = Just White
+          | cw == 0 && cr >  0 = Just Red
+          | otherwise          = Nothing
+        countWhite cnt r c mat
+          | r <= nrows m && c < ncols mat = countWhite (if mat ! (r,c) == White then cnt+1 else cnt) r (c+1) mat
+          | r <= nrows m && c == ncols mat = countWhite (if mat ! (r,c) == White then cnt+1 else cnt) (r+1) 1 mat
+          | otherwise                      = cnt
+        countRed cnt r c mat
+          | r <= nrows m && c <  ncols mat = countRed (if mat ! (r,c) == Red then cnt+1 else cnt) r (c+1) mat
+          | r <= nrows m && c == ncols mat = countRed (if mat ! (r,c) == Red then cnt+1 else cnt) (r+1) 1 mat
+          | otherwise                      = cnt
