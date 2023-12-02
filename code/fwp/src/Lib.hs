@@ -1,31 +1,21 @@
 module Lib
-    ( someFunc,
+    (
+    someFunc,
     setBoard,
-    setWeights,
     mapMat,
     move,
-    Board (White, Red, Empty),
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
+    Weights,
+    winGame,
     ) where
 
-{-
- TODO:
-  [ ] create move function that will facilitate movement
-    [x] simple movement
-    [ ] piece capture
-  [ ] create slow matrix
-    [ ] structure
-    [ ] analysation step
-    [ ] weight augmentation step
- -}
-
+import Board (Board (Red, White, WhiteKing, RedKing, Empty))
 import Data.Matrix
-
-data Board  = White | Red | Empty deriving (Eq,Show)
 
 data MoveType = Forward | Backward | FTakeRight | FTakeLeft | BTakeLeft | BTakeRight
 
-type Weights = (Float, Float, Float, Float) -- cap left, cap right, forward, backward
+-- | forward backward cap-left cap-right cap-back-left cap-back-right
+type Weights = (Float, Float, Float, Float, Float, Float)
 
 someFunc :: IO ()
 someFunc = putStrLn "not ready for testing"
@@ -72,9 +62,9 @@ move r c Forward m | x == Red && canMoveRed r c && getElem (r+1) c m == Empty =
                           canMoveRed row col = row < 8 && col <= 8 && row >= 1 && col >= 1
                           canMoveWhite row col = row <= 8 && col <= 8 && row > 1 && col >= 1
 
-move r c Backward m | x == Red && canMoveRed r c && getElem (r-1) c m == Empty =
+move r c Backward m | x == RedKing && canMoveRed r c && getElem (r-1) c m == Empty =
                       Just (setElem Empty (r,c) (setElem x (r-1, c) m))
-                    | x == White && canMoveWhite r c && getElem (r+1) c m == Empty =
+                    | x == WhiteKing && canMoveWhite r c && getElem (r+1) c m == Empty =
                       Just (setElem Empty (r,c) (setElem x (r+1, c) m))
                     | otherwise = Nothing
                     where x = getElem r c m
@@ -99,24 +89,37 @@ move r c FTakeLeft m  | x == Red && canTake r c =
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row+1) (col-1) m /= Empty || getElem (row+1) (col+1) m /= Empty)
 
-move r c BTakeRight m | x == Red && canTake r c =
+move r c BTakeRight m | x == RedKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r-1, c-1) (setElem x (r-2,c-2) m)))
-                      | x == White && canTake r c =
+                      | x == WhiteKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r+1, c+1) (setElem x (r+2,c+2) m)))
                       | otherwise = Nothing
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
 
-move r c BTakeLeft m | x == Red && canTake r c =
+move r c BTakeLeft m | x == RedKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r-1, c+1) (setElem x (r-2,c+2) m)))
-                     | x == White && canTake r c =
+                     | x == WhiteKing && canTake r c =
                         Just (setElem Empty (r,c) (setElem Empty (r+1, c-1) (setElem x (r+2,c-2) m)))
                      | otherwise = Nothing
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
 
--- | 'setWeights' analyses the state of the current Board and adjusts the weights accordingly
-setWeights :: Matrix Board -> Matrix Weights
-setWeights mb_t = mapMat mb_t (\r c mb -> if mb!(r,c) == Red || mb!(r,c) == White then (0.0,0.0,1.0,0.0) else (0.0,0.0,0.0,0.0))
+winGame :: Matrix Board -> Maybe Board
+winGame m = aux ((countWhite :: Int -> Int -> Int -> Matrix Board -> Int) 0 1 1 m)
+                ((countRed :: Int -> Int -> Int -> Matrix Board -> Int) 0 1 1 m)
+  where aux cw cr
+          | cw <  0 && cr <  0 = Just WhiteKing
+          | cw >  0 && cr == 0 = Just White
+          | cw == 0 && cr >  0 = Just Red
+          | otherwise          = Nothing
+        countWhite cnt r c mat
+          | r <= nrows m && c < ncols mat = countWhite (if mat ! (r,c) == White then cnt+1 else cnt) r (c+1) mat
+          | r <= nrows m && c == ncols mat = countWhite (if mat ! (r,c) == White then cnt+1 else cnt) (r+1) 1 mat
+          | otherwise                      = cnt
+        countRed cnt r c mat
+          | r <= nrows m && c <  ncols mat = countRed (if mat ! (r,c) == Red then cnt+1 else cnt) r (c+1) mat
+          | r <= nrows m && c == ncols mat = countRed (if mat ! (r,c) == Red then cnt+1 else cnt) (r+1) 1 mat
+          | otherwise                      = cnt

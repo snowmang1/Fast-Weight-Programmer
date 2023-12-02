@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'latex_output/fwp.blg'
+[37] biber:340> INFO - === Fri Nov 17, 2023, 17:43:03
+[46] Biber.pm:419> INFO - Reading 'latex_output/fwp.bcf'
+[84] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[93] Biber.pm:4419> INFO - Processing section 0
+[98] Biber.pm:4610> INFO - Looking for bibtex file 'bib/refs.bib' for section 0
+[105] bibtex.pm:1713> INFO - LaTeX decoding ...
+[184] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/refs.bib'
+[225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[225] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[226] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[226] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[230] bbl.pm:660> INFO - Writing 'latex_output/fwp.bbl' with encoding 'UTF-8'
+[231] bbl.pm:763> INFO - Output to latex_output/fwp.bbl
+[231] Biber.pm:131> WARN - ISBN '978-3-540-19839-0 978-1-4471-2063-6' in entry 'schmidhuber_self-referential_1993' is invalid - run biber with '--validate_datamodel' for details.
+[231] Biber.pm:133> INFO - WARNINGS: 1

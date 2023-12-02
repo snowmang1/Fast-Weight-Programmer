@@ -1,0 +1,19 @@
+name: Haskell CI
+
+on:
+  pull_request:
+    branches: ["trunk"]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          sparse-checkout: 'code/fwp'
+          sparse-checkout-cone-mode: false
+      - name: Stack setup
+        run: stack upgrade
+      - name: Test
+        run: cd code/fwp && stack test

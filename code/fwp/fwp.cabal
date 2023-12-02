@@ -25,7 +25,9 @@ source-repository head
 
 library
   exposed-modules:
+      Board
       Lib
+      Slow
   other-modules:
       Paths_fwp
   autogen-modules:
@@ -61,7 +63,8 @@ test-suite fwp-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      OpTests
+      MvTests
+      SlowTests
       Paths_fwp
   autogen-modules:
       Paths_fwp

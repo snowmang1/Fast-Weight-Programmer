@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Objective}{2}{section.2}%
+\contentsline {section}{\numberline {3}Literature Review}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Adaptation Based Meta-learning}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Methods}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}American checkers rules}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Axiomatic strategy}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Experiment parameters}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Results}{6}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}%
+\contentsline {section}{\numberline {7}Future Work}{6}{section.7}%
+\contentsline {section}{References}{I}{section.7}%
+\contentsline {section}{Index}{II}{section*.4}%
+\contentsline {section}{\numberline {A}Fine Grain Code Review}{III}{appendix.A}%
