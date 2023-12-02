@@ -8,15 +8,6 @@ import Board (Board (Red, White, WhiteKing, RedKing, Empty))
 import Lib (Weights)
 import Data.Matrix
 
-{-TODO:
-  [x] analzeWin function
-    - eliminate impossible play
-    - modulate for better play
-  [x] modulate weighted matrix
-    - function for map that can modulate the existing weights of
-      the current weight matrix (same type as analyzeWin)
--}
-
 -- | special map for analyzation step of slow matrix
 -- at each step this map takes as context the current row col and gives it to f
 -- f then outputs some Weight that will be set as the row col index of the Weight Matrix
