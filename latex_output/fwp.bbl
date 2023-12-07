@@ -19,6 +19,1096 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{noauthor_alonzo_nodate}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Alonzo Church {>} D. The $\Lambda$-Calculus and Type Theory (Stanford Encyclopedia of Philosophy)}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Snapshot:/Users/evandrake/Zotero/storage/WWDTNAK2/supplementD.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/entries/church/supplementD.html#D2ChurSimpTheoType
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/entries/church/supplementD.html#D2ChurSimpTheoType
+      \endverb
+    \endentry
+    \entry{ambroszkiewicz_grounding_2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=46be46d5ff0fb28c1c793eb086aa32ad}{%
+           family={Ambroszkiewicz},
+           familyi={A\bibinitperiod},
+           given={Stanislaw},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \strng{fullhash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \strng{bibnamehash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \strng{authorbibnamehash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \strng{authornamehash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \strng{authorfullhash}{46be46d5ff0fb28c1c793eb086aa32ad}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is a ubiquitous opinion among mathematicians that a real number is just a point in the line. If this rough definition is not enough, then a mathematician may provide a formal definition of the real numbers in the set theoretic and axiomatic fashion, i.e. via Cauchy sequences or Dedekind cuts, or as the collection of axioms characterizing exactly (up to isomorphism) the set of real numbers as the complete and totally ordered Archimedean field. Actually, the above notions of the real numbers are abstract and do not have a constructive grounding. Definition of Cauchy sequences, and equivalence classes of these sequences explicitly use the actual infinity. The same is for Dedekind cuts, where the set of rational numbers is used as actual infinity. Although there is no direct constructive grounding for these abstract notions, there are so called intuitions on which they are based. A rigorous approach to express these very intuition in a constructive way is proposed. It is based on the concept of the adjacency relation that seems to be a missing primitive concept in type theory. The approach corresponds to the intuitionistic view of Continuum proposed by Brouwer. The famous and controversial Brouwer Continuity Theorem is discussed on the basis of different principle than the Axiom of Continuity.}
+      \field{day}{11}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{{arXiv}:1510.02787}
+      \field{title}{The grounding for Continuum}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1510.02787 [cs, math]
+      \endverb
+      \verb{file}
+      \verb Grounding in continuum .pdf:/Users/evandrake/Documents/thesis/papers/Grounding in continuum .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1510.02787
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1510.02787
+      \endverb
+    \endentry
+    \entry{bossens_learning_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd5580c62f40f346e1a9d2a1532d1eaa}{%
+           family={Bossens},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dfd267c9ac4c454709d6f495e53c391a}{%
+           family={Townsend},
+           familyi={T\bibinitperiod},
+           given={N.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=acf37a70180fe6a9798473a971f2957d}{%
+           family={Sobey},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \strng{fullhash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \strng{bibnamehash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \strng{authorbibnamehash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \strng{authornamehash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \strng{authorfullhash}{7ccf3254b973dea0c409e4e46e3933e4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Increasingly, autonomous agents will be required to operate on long-term missions. This will create a demand for general intelligence because feedback from a human operator may be sparse and delayed, and because not all behaviours can be prescribed. Deep neural networks and reinforcement learning methods can be applied in such environments but their fixed updating routines imply an inductive bias in learning spatio-temporal patterns, meaning some environments will be unsolvable. To address this problem, this paper proposes active adaptive perception, the ability of an architecture to learn when and how to modify and selectively utilise its perception module. To achieve this, a generic architecture based on a self-modifying policy ({SMP}) is proposed, and implemented using Incremental Self-improvement with the Success Story Algorithm. The architecture contrasts to deep reinforcement learning systems which follow fixed training strategies and earlier {SMP} studies which for perception relied either entirely on the working memory or on untrainable active perception instructions. One computationally cheap and one more expensive implementation are presented and compared to {DRQN}, an off-policy deep reinforcement learner using experience replay and Incremental Self-improvement, an {SMP}, on various non-episodic partially observable mazes. The results show that the simple instruction set leads to emergent strategies to avoid detracting corridors and rooms, and that the expensive implementation allows selectively ignoring perception where it is inaccurate.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{title}{Learning to learn with active adaptive perception}
+      \field{volume}{115}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{30\bibrangedash 49}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neunet.2019.03.006
+      \endverb
+      \verb{file}
+      \verb NEUNET_D_18_00187R3.pdf:/Users/evandrake/Zotero/storage/QMTZC98N/NEUNET_D_18_00187R3.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608019300796
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608019300796
+      \endverb
+      \keyw{adaptive learning}
+    \endentry
+    \entry{chan_1993}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=be39814d5fd031e1dc06e63a946a3d95}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Philip\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=741feff8ef80586d2b7d04b345e13502}{%
+           family={Stolfo},
+           familyi={S\bibinitperiod},
+           given={Salvatore\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, D.C., United States}%
+      }
+      \list{publisher}{1}{%
+        {{ACM} Press}%
+      }
+      \strng{namehash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \strng{fullhash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \strng{bibnamehash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \strng{authorbibnamehash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \strng{authornamehash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \strng{authorfullhash}{a4a2f4e006e439e40aaccd6c1d8b1b3a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the second international conference on \{Information\} and knowledge management - \{{CIKM}\} '93}
+      \field{isbn}{978-0-89791-626-4}
+      \field{title}{Experiments on multistrategy learning by meta-learning}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{314\bibrangedash 323}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/170088.170160
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/evandrake/Zotero/storage/SYT7UDNE/Chan and Stolfo - 1993 - Experiments on multistrategy learning by meta-lear.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://portal.acm.org/citation.cfm?doid=170088.170160
+      \endverb
+      \verb{url}
+      \verb http://portal.acm.org/citation.cfm?doid=170088.170160
+      \endverb
+      \keyw{multistrategy learning}
+    \endentry
+    \entry{chen_towards_2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=eaefa8dd180971cfee840787cf3b798b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaohong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=37167f6890f844f8b2e8d83670570adf}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Minh-Thai},
+           giveni={M\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=d90b30c008c843c1e258fa26e9fc957c}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5b98fd8066c9ad114250858256de8488}{%
+           family={Peña},
+           familyi={P\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9af91b822c411b516793e9a20512a651}{%
+           family={Roşu},
+           familyi={R\bibinitperiod},
+           given={Grigore},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8424eb03e9664b93af26f47bc8a1be7}
+      \strng{fullhash}{f4a88ebde8a096e09bbfefecab0217c4}
+      \strng{bibnamehash}{e8424eb03e9664b93af26f47bc8a1be7}
+      \strng{authorbibnamehash}{e8424eb03e9664b93af26f47bc8a1be7}
+      \strng{authornamehash}{e8424eb03e9664b93af26f47bc8a1be7}
+      \strng{authorfullhash}{f4a88ebde8a096e09bbfefecab0217c4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Automation of fixpoint reasoning has been extensively studied for various mathematical structures, logical formalisms, and computational domains, resulting in specialized fixpoint provers for heaps, for streams, for term algebras, for temporal properties, for program correctness, and for many other formal systems and inductive and coinductive properties. However, in spite of great theoretical and practical interest, there is no unified framework for automated fixpoint reasoning. Although several attempts have been made, there is no evidence that such a unified framework is possible, or practical. In this paper, we propose a candidate based on matching logic, a formalism recently shown to theoretically unify the above mentioned formal systems. Unfortunately, the (Knaster-Tarski) proof rule of matching logic, which enables inductive reasoning, is not syntax-driven. Worse, it can be applied at any step during a proof, making automation seem hopeless. Inspired by recent advances in automation of inductive proofs in separation logic, we propose an alternative proof system for matching logic, which is amenable for automation. We then discuss our implementation of it, which although not superior to specialized state-of-the-art automated provers for specific domains, we believe brings some evidence and hope that a unified framework for automated reasoning is not out of reach.}
+      \field{day}{13}
+      \field{issn}{2475-1421}
+      \field{issue}{{OOPSLA}}
+      \field{journaltitle}{Proceedings of the {ACM} on Programming Languages}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shortjournal}{Proc. {ACM} Program. Lang.}
+      \field{title}{Towards a unified proof framework for automated fixpoint reasoning using matching logic}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1145/3428229
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/evandrake/Zotero/storage/94DB3TQP/Chen et al. - 2020 - Towards a unified proof framework for automated fi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3428229
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3428229
+      \endverb
+    \endentry
+    \entry{church_-calculus_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=eb8fba5b5e50ff0f327f47041fe3f891}{%
+           family={Church},
+           familyi={C\bibinitperiod},
+           given={Alonzo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \strng{fullhash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \strng{bibnamehash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \strng{authorbibnamehash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \strng{authornamehash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \strng{authorfullhash}{eb8fba5b5e50ff0f327f47041fe3f891}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{lambda-Calculus and Type Theory}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Snapshot:/Users/evandrake/Zotero/storage/DTH9IZJ9/supplementD.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/entries/church/supplementD.html
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/entries/church/supplementD.html
+      \endverb
+    \endentry
+    \entry{clark_meta-learning_2022}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=fc24d54994dc7c0893aaf6e1ca5fb42b}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8f0ff8a52df479977ef06eb1d252f7b1}{%
+           family={Guu},
+           familyi={G\bibinitperiod},
+           given={Kelvin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=155d2b8a54e365990a5ae9d24555e4a3}{%
+           family={Pasupat},
+           familyi={P\bibinitperiod},
+           given={Panupong},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e34c5aa67281924804d54d88e58ca38a}{%
+           family={Norouzi},
+           familyi={N\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8f29543aaad0d840827aaab943a2e393}
+      \strng{fullhash}{b030cb542d79356fa65f973b34dc909b}
+      \strng{bibnamehash}{8f29543aaad0d840827aaab943a2e393}
+      \strng{authorbibnamehash}{8f29543aaad0d840827aaab943a2e393}
+      \strng{authornamehash}{8f29543aaad0d840827aaab943a2e393}
+      \strng{authorfullhash}{b030cb542d79356fa65f973b34dc909b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dynamic evaluation of language models ({LMs}) adapts model parameters at test time using gradient information from previous tokens and substantially improves {LM} performance. However, it requires over 3x more compute than standard inference. We present Fast Weight Layers ({FWLs}), a neural component that provides the benefits of dynamic evaluation much more efficiently by expressing gradient updates as linear attention. A key improvement over dynamic evaluation is that {FWLs} can also be applied at training time so the model learns to make good use of gradient updates. {FWLs} can easily be added on top of existing transformer models, require relatively little extra compute or memory to run, and significantly improve language modeling perplexity.}
+      \field{day}{5}
+      \field{eprinttype}{arxiv}
+      \field{month}{12}
+      \field{number}{{arXiv}:2212.02475}
+      \field{title}{Meta-Learning Fast Weight Language Models}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2212.02475 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/ASB9HUCK/2212.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/HVX4EFGU/Clark et al. - 2022 - Meta-Learning Fast Weight Language Models.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2212.02475
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2212.02475
+      \endverb
+    \endentry
+    \entry{cox_introspective_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5d9ccd6da0c052e2d9dfbc1e90f33002}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6718bd022164e0067dc7a89a3e32462c}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Ashwin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \strng{fullhash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \strng{bibnamehash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \strng{authorbibnamehash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \strng{authornamehash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \strng{authorfullhash}{48f6dc63f7c96a0bbd468ae412b62dc8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A central problem in multistrategy learning systems is the selection and sequencing of machine learning algorithms for particular situations. This is typically done by the system designer who analyzes the learning task and implements the appropriate algorithm or sequence of algorithms for that task. We propose a solution to this problem which enables an {AI} system with a library of machine learning algorithms to select and sequence appropriate algorithms autonomously. Furthermore, instead of relying on the system designer or user to provide a learning goal or target concept to the learning system, our method enables the system to determine its learning goals based on analysis of its successes and failures at the performance task. The method involves three steps: Given a performance failure, the learner examines a trace of its reasoning prior to the failure to diagnose what went wrong (blame assignment); given the resultant explanation of the reasoning failure, the learner posts explicitly represented learning goals to change its background knowledge (deciding what to learn); and given a set of learning goals, the learner uses nonlinear planning techniques to assemble a sequence of machine learning algorithms, represented as planning operators, to achieve the learning goals (learning-strategy construction). In support of these operations, we define the types of reasoning failures, a taxonomy of failure causes, a second-order formalism to represent reasoning traces, a taxonomy of learning goals that specify desired change to the background knowledge of a system, and a declarative task-formalism representation of learning algorithms. We present the Meta-{AQUA} system, an implemented multistrategy learner that operates in the domain of story understanding. Extensive empirical evaluations of Meta-{AQUA} show that it performs significantly better in a deliberative, planful mode than in a reflexive mode in which learning goals are ablated and, furthermore, that the arbitrary ordering of learning algorithms can lead to worse performance than no learning at all. We conclude that explicit representation and sequencing of learning goals is necessary for avoiding negative interactions between learning algorithms that can lead to less effective learning.}
+      \field{annotation}{Cox and Ram have created the Meta-{AQUA} story analysis algorithm. In this extensive paper Cox outlines the motivations behind what meta learning algorithms do as well as defines what it is that they should do. Cox explains that meta learning should be a three part endeavor: the learner must be able to preform blame assignment; the learner must be able to decide what to learn and form a set of learning goals; finally the learner needs to be able to use these goals to formulate a strategy and create a learning a plan. This is a multi-strategy style of meta learning; as such the learning strategy will be a collection of learning algorithms that better achieve results for the current task. Meta-{AQUA} does just this it analysis the context of its task and retrospectively preforms a self referential analysis to select new learning strategies (new sets of algorithms from its library or tool box). This paper is integral in my understanding of multi-strategy learning one of the main pillars of meta learning.}
+      \field{day}{1}
+      \field{issn}{0004-3702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{Artificial Intelligence}
+      \field{shorttitle}{Introspective multistrategy learning}
+      \field{title}{Introspective multistrategy learning: On the construction of learning strategies}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{112}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 55}
+      \range{pages}{55}
+      \verb{doi}
+      \verb 10.1016/S0004-3702(99)00047-8
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/evandrake/Zotero/storage/R29QLFVG/Cox and Ram - 1999 - Introspective multistrategy learning On the const.pdf:application/pdf;ScienceDirect Snapshot:/Users/evandrake/Zotero/storage/9FUJZN3V/S0004370299000478.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0004370299000478
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0004370299000478
+      \endverb
+      \keyw{introspective,multistrategy learning}
+    \endentry
+    \entry{curry_combinatory_1964}{article}{}
+      \name{author}{1}{}{%
+        {{hash=af6e971124a01700fcea2b26e4b62ec4}{%
+           family={Curry},
+           familyi={C\bibinitperiod},
+           given={Haskell\bibnamedelima B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{af6e971124a01700fcea2b26e4b62ec4}
+      \strng{fullhash}{af6e971124a01700fcea2b26e4b62ec4}
+      \strng{bibnamehash}{af6e971124a01700fcea2b26e4b62ec4}
+      \strng{authorbibnamehash}{af6e971124a01700fcea2b26e4b62ec4}
+      \strng{authornamehash}{af6e971124a01700fcea2b26e4b62ec4}
+      \strng{authorfullhash}{af6e971124a01700fcea2b26e4b62ec4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0273-0979, 1088-9485}
+      \field{journaltitle}{Bulletin of the American Mathematical Society}
+      \field{langid}{english}
+      \field{number}{6}
+      \field{shortjournal}{Bull. Amer. Math. Soc.}
+      \field{title}{Combinatory recursive objects of all finite types}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{70}
+      \field{year}{1964}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{814\bibrangedash 817}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1090/S0002-9904-1964-11245-3
+      \endverb
+      \verb{file}
+      \verb curry recursion.pdf:/Users/evandrake/Documents/thesis/papers/curry recursion.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ams.org/bull/1964-70-06/S0002-9904-1964-11245-3/
+      \endverb
+      \verb{url}
+      \verb https://www.ams.org/bull/1964-70-06/S0002-9904-1964-11245-3/
+      \endverb
+    \endentry
+    \entry{deutsch_alonzo_2023}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=21ec79feace65c2b7d05dd030db097fe}{%
+           family={Deutsch},
+           familyi={D\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=009a5fda53d499ed52394fec78b7a8d2}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=5ff1c29ff1cc8f6336533b0ffd842a79}{%
+           family={Zalta},
+           familyi={Z\bibinitperiod},
+           given={Edward\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=47603970fcd579d567acd0cb66cdb242}{%
+           family={Nodelman},
+           familyi={N\bibinitperiod},
+           given={Uri},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Metaphysics Research Lab, Stanford University}%
+      }
+      \strng{namehash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{fullhash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{bibnamehash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{authorbibnamehash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{authornamehash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{authorfullhash}{da9e3a879ddcedc47caca86a923839c9}
+      \strng{editorbibnamehash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
+      \strng{editornamehash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
+      \strng{editorfullhash}{ab8d8ffb26096a29ec1c38ef9e4911c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Stanford Encyclopedia of Philosophy}
+      \field{edition}{Winter 2023}
+      \field{title}{Alonzo Church}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb SEP - Snapshot:/Users/evandrake/Zotero/storage/BHDZQXMS/index.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://plato.stanford.edu/archives/win2023/entries/church/
+      \endverb
+      \verb{url}
+      \verb https://plato.stanford.edu/archives/win2023/entries/church/
+      \endverb
+    \endentry
+    \entry{finn_model-agnostic_2017}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=058e82495825ae376c6a96a12169e6ee}{%
+           family={Finn},
+           familyi={F\bibinitperiod},
+           given={Chelsea},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e28d4ee199593959d8c29980a64f1974}{%
+           family={Abbeel},
+           familyi={A\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c9545da54b33744da25943cdf66eadac}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8fd1a9b285463d1536dcb64b4011a015}
+      \strng{fullhash}{8fd1a9b285463d1536dcb64b4011a015}
+      \strng{bibnamehash}{8fd1a9b285463d1536dcb64b4011a015}
+      \strng{authorbibnamehash}{8fd1a9b285463d1536dcb64b4011a015}
+      \strng{authornamehash}{8fd1a9b285463d1536dcb64b4011a015}
+      \strng{authorfullhash}{8fd1a9b285463d1536dcb64b4011a015}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.}
+      \field{annotation}{Finn et al. describes in fine grain detail an algorithm for an adaptive few-shot learning model. This model is a meta model that can absorb any other learning model given it has certain requirements. These requirements are translated into the parameters of the learning model and the meta-learning algorithm uses them to make adjustments according to the current task. This paper broadens my pool of adaptive meta-learning models and serves as a literature standard for adaptive learning styles.}
+      \field{day}{18}
+      \field{eprinttype}{arxiv}
+      \field{month}{7}
+      \field{number}{{arXiv}:1703.03400}
+      \field{title}{Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks}
+      \field{urlday}{25}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1703.03400 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/TCAKTTBZ/1703.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/9LCE67MI/Finn et al. - 2017 - Model-Agnostic Meta-Learning for Fast Adaptation o.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1703.03400
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1703.03400
+      \endverb
+      \keyw{adaptive learning}
+    \endentry
+    \entry{gabor_self-replication_2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=2a7316100d8ca901b245978d11162911}{%
+           family={Gabor},
+           familyi={G\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=deb7b455b4b1ce35fe26d5087917fda2}{%
+           family={Illium},
+           familyi={I\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=858dd95aad533b413b5e0365073983ae}{%
+           family={Zorn},
+           familyi={Z\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1032f927de8ccd9c3a6ab391849e89bf}{%
+           family={Lenta},
+           familyi={L\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ca6f9c2e21e1459e6b57d860170784cf}{%
+           family={Mattausch},
+           familyi={M\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b1cdce8d91bc24f95cac0402d7cd5a8c}{%
+           family={Belzner},
+           familyi={B\bibinitperiod},
+           given={Lenz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=50ab06712d6f9fe886f00ca1a2ff22a6}{%
+           family={Linnhoff-Popien},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{75ad9eab76bc9a8800691b17741b2aaa}
+      \strng{fullhash}{210b76f038ae4d1bc7242e4c097d4b59}
+      \strng{bibnamehash}{75ad9eab76bc9a8800691b17741b2aaa}
+      \strng{authorbibnamehash}{75ad9eab76bc9a8800691b17741b2aaa}
+      \strng{authornamehash}{75ad9eab76bc9a8800691b17741b2aaa}
+      \strng{authorfullhash}{210b76f038ae4d1bc7242e4c097d4b59}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract A key element of biological structures is self-replication. Neural networks are the prime structure used for the emergent construction of complex behavior in computers. We analyze how various network types lend themselves to self-replication. Backpropagation turns out to be the natural way to navigate the space of network weights and allows non-trivial self-replicators to arise naturally. We perform an in-depth analysis to show the self-replicators' robustness to noise. We then introduce artificial chemistry environments consisting of several neural networks and examine their emergent behavior. In extension to this work's previous version (Gabor et al., 2019), we provide an extensive analysis of the occurrence of fixpoint weight configurations within the weight space and an approximation of their respective attractor basins.}
+      \field{day}{28}
+      \field{issn}{1064-5462, 1530-9185}
+      \field{journaltitle}{Artificial Life}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Self-Replication in Neural Networks}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{205\bibrangedash 223}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1162/artl_a_00359
+      \endverb
+      \verb{file}
+      \verb Gabor-2022.pdf:/Users/evandrake/Documents/Thesis/thesis_sup/papers/Gabor-2022.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://direct.mit.edu/artl/article/28/2/205/111793/Self-Replication-in-Neural-Networks
+      \endverb
+      \verb{url}
+      \verb https://direct.mit.edu/artl/article/28/2/205/111793/Self-Replication-in-Neural-Networks
+      \endverb
+      \keyw{self-reference}
+    \endentry
+    \entry{gill_domain-specific_2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f9fb618bfb86f6e35da6375a425b2a54}{%
+           family={Gill},
+           familyi={G\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \strng{fullhash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \strng{bibnamehash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \strng{authorbibnamehash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \strng{authornamehash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \strng{authorfullhash}{f9fb618bfb86f6e35da6375a425b2a54}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{University of Kansas}
+      \field{month}{4}
+      \field{title}{Domain-specific Languages and Code Synthesis Using Haskell}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb 2611429.2617811:/Users/evandrake/Zotero/storage/FIDCI3LC/2611429.2617811:application/pdf
+      \endverb
+    \endentry
+    \entry{giloi_konrad_1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ae93a27a2ea63a6e0cb6191a14ed2410}{%
+           family={Giloi},
+           familyi={G\bibinitperiod},
+           given={W.K.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \strng{fullhash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \strng{bibnamehash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \strng{authorbibnamehash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \strng{authornamehash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \strng{authorfullhash}{ae93a27a2ea63a6e0cb6191a14ed2410}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{10586180}
+      \field{journaltitle}{{IEEE} Annals of the History of Computing}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{{IEEE} Annals Hist. Comput.}
+      \field{shorttitle}{Konrad Zuse's Plankalkül}
+      \field{title}{Konrad Zuse's Plankalkül: the first high-level, "non von Neumann" programming language}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{19}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{17\bibrangedash 24}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/85.586068
+      \endverb
+      \verb{file}
+      \verb Zuse_Plan_Kalkul.pdf:/Users/evandrake/Documents/thesis/papers/Zuse_Plan_Kalkul.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/586068/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/586068/
+      \endverb
+    \endentry
+    \entry{godel_formally_1931}{article}{}
+      \name{author}{1}{}{%
+        {{hash=741b5eae8f0486fe4cfb19725eb596a0}{%
+           family={Gödel},
+           familyi={G\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=658e98a99c9aaf6c3e357216eb79007e}{%
+           family={B},
+           familyi={B\bibinitperiod},
+           given={Meltzer},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{fullhash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{bibnamehash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{authorbibnamehash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{authornamehash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{authorfullhash}{741b5eae8f0486fe4cfb19725eb596a0}
+      \strng{translatorbibnamehash}{658e98a99c9aaf6c3e357216eb79007e}
+      \strng{translatornamehash}{658e98a99c9aaf6c3e357216eb79007e}
+      \strng{translatorfullhash}{658e98a99c9aaf6c3e357216eb79007e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{On Formally Undecidable Propositions of Principia Mathematica And Related Systems}
+      \field{year}{1931}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb G{\"o}del - On Formally Undecidable Propositions of Principia .pdf:/Users/evandrake/Zotero/storage/UW3SSUFZ/G{\"o}del - On Formally Undecidable Propositions of Principia .pdf:application/pdf;Godel-1931.pdf:/Users/evandrake/Documents/thesis/papers/Godel-1931.pdf:application/pdf
+      \endverb
+      \keyw{proof theory}
+    \endentry
+    \entry{goertzel_artificial_2007}{collection}{}
+      \name{editor}{2}{}{%
+        {{hash=d00baed2f90b47ae52840783b7ac55e4}{%
+           family={Goertzel},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=44c5d7bf625ff9027cc633cb2e95f67d}{%
+           family={Pennachin},
+           familyi={P\bibinitperiod},
+           given={Cassio},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin ; New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \strng{fullhash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \strng{bibnamehash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \strng{editorbibnamehash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \strng{editornamehash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \strng{editorfullhash}{5a16d9bbe9473d9cfbc8d7f263c86fd9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-540-23733-4}
+      \field{langid}{english}
+      \field{pagetotal}{508}
+      \field{series}{Cognitive technologies}
+      \field{title}{Artificial general intelligence}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Goertzel and Pennachin - 2007 - Artificial general intelligence.pdf:/Users/evandrake/Zotero/storage/C2GGHIMZ/Goertzel and Pennachin - 2007 - Artificial general intelligence.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{gopalakrishnan_unsupervised_2022}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=f44397f0b7be942755b9a8ecff31f013}{%
+           family={Gopalakrishnan},
+           familyi={G\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a6d632a869d9349cc7edad8941138455}{%
+           family={Irie},
+           familyi={I\bibinitperiod},
+           given={Kazuki},
+           giveni={K\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9a4500044d319966e6dd94dac5611c5a}{%
+           family={Steenkiste},
+           familyi={S\bibinitperiod},
+           given={Sjoerd},
+           giveni={S\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{9f8fb64fd8573ad6568f232d4d2ae4f3}
+      \strng{fullhash}{8421f773ba48ba3c665ffbb47af2d4a6}
+      \strng{bibnamehash}{9f8fb64fd8573ad6568f232d4d2ae4f3}
+      \strng{authorbibnamehash}{9f8fb64fd8573ad6568f232d4d2ae4f3}
+      \strng{authornamehash}{9f8fb64fd8573ad6568f232d4d2ae4f3}
+      \strng{authorfullhash}{8421f773ba48ba3c665ffbb47af2d4a6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The discovery of reusable sub-routines simplifies decision-making and planning in complex reinforcement learning problems. Previous approaches propose to learn such temporal abstractions in a purely unsupervised fashion through observing state-action trajectories gathered from executing a policy. However, a current limitation is that they process each trajectory in an entirely sequential manner, which prevents them from revising earlier decisions about sub-routine boundary points in light of new incoming information. In this work we propose {SloTTAr}, a fully parallel approach that integrates sequence processing Transformers with a Slot Attention module and adaptive computation for learning about the number of such sub-routines in an unsupervised fashion. We demonstrate how {SloTTAr} is capable of outperforming strong baselines in terms of boundary point discovery, even for sequences containing variable amounts of sub-routines, while being up to 7x faster to train on existing benchmarks.}
+      \field{day}{22}
+      \field{eprinttype}{arxiv}
+      \field{month}{11}
+      \field{number}{{arXiv}:2203.13573}
+      \field{title}{Unsupervised Learning of Temporal Abstractions with Slot-based Transformers}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2203.13573 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/UBMEF9CM/2203.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/9RF8KJX2/Gopalakrishnan et al. - 2022 - Unsupervised Learning of Temporal Abstractions wit.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2203.13573
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2203.13573
+      \endverb
+    \endentry
+    \entry{guo_comprehensive_2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b8861410fca2f53af24674dea9a3aba7}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Dakai},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f9b5369818b7cbbdca7624080b8a48b8}{%
+           family={Link\bibnamedelimb to\bibnamedelimb external\bibnamedelima site},
+           familyi={L\bibinitperiod\bibinitdelim t\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim s\bibinitperiod},
+           given={this\bibnamedelimb link\bibnamedelimb will\bibnamedelimb open\bibnamedelimb in\bibnamedelimb a\bibnamedelimb new\bibnamedelima window},
+           giveni={t\bibinitperiod\bibinitdelim l\bibinitperiod\bibinitdelim w\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim a\bibinitperiod\bibinitdelim n\bibinitperiod\bibinitdelim w\bibinitperiod}}}%
+        {{hash=803a54f4f697145c55743cf11e07eba8}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Wensheng},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{54347b6502f47f3a8c20c7636fc1939d}
+      \strng{fullhash}{54347b6502f47f3a8c20c7636fc1939d}
+      \strng{bibnamehash}{54347b6502f47f3a8c20c7636fc1939d}
+      \strng{authorbibnamehash}{54347b6502f47f3a8c20c7636fc1939d}
+      \strng{authornamehash}{54347b6502f47f3a8c20c7636fc1939d}
+      \strng{authorfullhash}{54347b6502f47f3a8c20c7636fc1939d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The increasing significance of theorem proving-based formalization in mathematics and computer science highlights the necessity for formalizing foundational mathematical theories. In this work, we employ the Coq interactive theorem prover to methodically formalize the language, semantics, and syntax of propositional logic, a fundamental aspect of mathematical reasoning and proof construction. We construct four Hilbert-style axiom systems and a natural deduction system for propositional logic, and establish their equivalences through meticulous proofs. Moreover, we provide formal proofs for essential meta-theorems in propositional logic, including the Deduction Theorem, Soundness Theorem, Completeness Theorem, and Compactness Theorem. Importantly, we present an exhaustive formal proof of the Completeness Theorem in this paper. To bolster the proof of the Completeness Theorem, we also formalize concepts related to mappings and countability, and deliver a formal proof of the Cantor--Bernstein--Schröder theorem. Additionally, we devise automated Coq tactics explicitly designed for the propositional logic inference system delineated in this study, enabling the automatic verification of all tautologies, all internal theorems, and the majority of syntactic and semantic inferences within the system. This research contributes a versatile and reusable Coq library for propositional logic, presenting a solid foundation for numerous applications in mathematics, such as the accurate expression and verification of properties in software programs and digital circuits. This work holds particular importance in the domains of mathematical formalization, verification of software and hardware security, and in enhancing comprehension of the principles of logical reasoning.}
+      \field{journaltitle}{Mathematics}
+      \field{note}{Num Pages: 2504 Place: Basel, Switzerland Publisher: {MDPI} {AG}}
+      \field{number}{11}
+      \field{shorttitle}{A Comprehensive Formalization of Propositional Logic in Coq}
+      \field{title}{A Comprehensive Formalization of Propositional Logic in Coq: Deduction Systems, Meta-Theorems, and Automation Tactics}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{2504}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/math11112504
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/evandrake/Zotero/storage/EB8WJWIB/Guo et al. - 2023 - A Comprehensive Formalization of Propositional Log.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.proquest.com/docview/2824017491/abstract/7553220F76814F76PQ/2
+      \endverb
+      \verb{url}
+      \verb https://www.proquest.com/docview/2824017491/abstract/7553220F76814F76PQ/2
+      \endverb
+    \endentry
+    \entry{hochreiter_long_1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{bibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural computation}
+      \field{note}{Publisher: {MIT} press}
+      \field{number}{8}
+      \field{title}{Long short-term memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+      \verb{file}
+      \verb lstm.pdf:/Users/evandrake/Zotero/storage/QX6S7MFQ/lstm.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{hospedales_meta-learning_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5c63f1e06139e794f16b23bff79f44d0}{%
+           family={Hospedales},
+           familyi={H\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d600b3c6b09381a127cf3fa963ad41f8}{%
+           family={Antoniou},
+           familyi={A\bibinitperiod},
+           given={Antreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=09817de2c36db47e799b7466a4204200}{%
+           family={Micaelli},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2c7ef9893a6c91f38a53c834572768e6}{%
+           family={Storkey},
+           familyi={S\bibinitperiod},
+           given={Amos},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e37afc1dc6da7c0b58a8f30e489947f2}
+      \strng{fullhash}{d583a1cd9dfe002ae56abfce6d080660}
+      \strng{bibnamehash}{e37afc1dc6da7c0b58a8f30e489947f2}
+      \strng{authorbibnamehash}{e37afc1dc6da7c0b58a8f30e489947f2}
+      \strng{authornamehash}{e37afc1dc6da7c0b58a8f30e489947f2}
+      \strng{authorfullhash}{d583a1cd9dfe002ae56abfce6d080660}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The field of meta-learning, or learning-to-learn, has seen a dramatic rise in interest in recent years. Contrary to conventional approaches to {AI} where tasks are solved from scratch using a fixed learning algorithm, meta-learning aims to improve the learning algorithm itself, given the experience of multiple learning episodes. This paradigm provides an opportunity to tackle many conventional challenges of deep learning, including data and computation bottlenecks, as well as generalization. This survey describes the contemporary meta-learning landscape. We first discuss definitions of meta-learning and position it with respect to related fields, such as transfer learning and hyperparameter optimization. We then propose a new taxonomy that provides a more comprehensive breakdown of the space of meta-learning methods today. We survey promising applications and successes of meta-learning such as few-shot learning and reinforcement learning. Finally, we discuss outstanding challenges and promising areas for future research.}
+      \field{issn}{1939-3539}
+      \field{journaltitle}{{IEEE} Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{9}
+      \field{note}{Conference Name: {IEEE} Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{9}
+      \field{shorttitle}{Meta-Learning in Neural Networks}
+      \field{title}{Meta-Learning in Neural Networks: A Survey}
+      \field{volume}{44}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{5149\bibrangedash 5169}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2021.3079209
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Full Text PDF:/Users/evandrake/Zotero/storage/7CTXRXW6/Hospedales et al. - 2022 - Meta-Learning in Neural Networks A Survey.pdf:application/pdf
+      \endverb
+      \keyw{survey}
+    \endentry
+    \entry{hutter_2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4db2b09973c88dfc6c987ed53d89c9e5}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=528d4af87fd2ecf5fb8a22db913ce088}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d989545591ff0b2bb124972c34d7811b}{%
+           family={Kotthoff},
+           familyi={K\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4ce3afeba4f8f866dbad8e5b02118406}{%
+           family={Vanschoren},
+           familyi={V\bibinitperiod},
+           given={Joaquin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{fullhash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{bibnamehash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{authorbibnamehash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{authornamehash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{authorfullhash}{4db2b09973c88dfc6c987ed53d89c9e5}
+      \strng{editorbibnamehash}{b7f813edbdf62f46111bb70430af9da8}
+      \strng{editornamehash}{b7f813edbdf62f46111bb70430af9da8}
+      \strng{editorfullhash}{b7f813edbdf62f46111bb70430af9da8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-030-05317-8 978-3-030-05318-5}
+      \field{note}{Series Title: The \{Springer\} \{Series\} on \{Challenges\} in \{Machine\} \{Learning\}}
+      \field{shorttitle}{Automated \{Machine\} \{Learning\}}
+      \field{title}{Automated \{Machine\} \{Learning\}: \{Methods\}, \{Systems\}, \{Challenges\}}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-030-05318-5
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/evandrake/Zotero/storage/NYSII6MA/Hutter et al. - 2019 - Automated Machine Learning Methods, Systems, Chal.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-030-05318-5
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-030-05318-5
+      \endverb
+      \keyw{survey}
+    \endentry
     \entry{irie_modern_2022}{misc}{}
       \name{author}{4}{}{%
         {{hash=a6d632a869d9349cc7edad8941138455}{%
@@ -51,6 +1141,7 @@
       \strng{authorbibnamehash}{720801232b607d9b01848ef506212d11}
       \strng{authornamehash}{720801232b607d9b01848ef506212d11}
       \strng{authorfullhash}{428ee28cbfbb751f567f156f1382f3a6}
+      \field{extraname}{1}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
@@ -84,6 +1175,501 @@
       \verb http://arxiv.org/abs/2202.05780
       \endverb
       \keyw{self-reference,self modification,fast weight programmer,introspective,adaptive learning}
+    \endentry
+    \entry{irie_going_2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a6d632a869d9349cc7edad8941138455}{%
+           family={Irie},
+           familyi={I\bibinitperiod},
+           given={Kazuki},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b1f22cfa1f8c8f5aea7f45e6a6614d53}{%
+           family={Schlag},
+           familyi={S\bibinitperiod},
+           given={Imanol},
+           giveni={I\bibinitperiod}}}%
+        {{hash=612fda6a225fc99663b98d48443de287}{%
+           family={Csordás},
+           familyi={C\bibinitperiod},
+           given={Róbert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{720801232b607d9b01848ef506212d11}
+      \strng{fullhash}{428ee28cbfbb751f567f156f1382f3a6}
+      \strng{bibnamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authorbibnamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authornamehash}{720801232b607d9b01848ef506212d11}
+      \strng{authorfullhash}{428ee28cbfbb751f567f156f1382f3a6}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transformers with linearised attention (''linear Transformers'') have demonstrated the practical scalability and effectiveness of outer product-based Fast Weight Programmers ({FWPs}) from the '90s. However, the original {FWP} formulation is more general than the one of linear Transformers: a slow neural network ({NN}) continually reprograms the weights of a fast {NN} with arbitrary architecture. In existing linear Transformers, both {NNs} are feedforward and consist of a single layer. Here we explore new variations by adding recurrence to the slow and fast nets. We evaluate our novel recurrent {FWPs} ({RFWPs}) on two synthetic algorithmic tasks (code execution and sequential {ListOps}), Wikitext-103 language models, and on the Atari 2600 2D game environment. Our models exhibit properties of Transformers and {RNNs}. In the reinforcement learning setting, we report large improvements over {LSTM} in several Atari games. Our code is public.}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Going Beyond Linear Transformers with Recurrent Fast Weight Programmers}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{7703\bibrangedash 7717}
+      \range{pages}{15}
+      \verb{file}
+      \verb Full Text PDF:/Users/evandrake/Zotero/storage/959RHCK8/Irie et al. - 2021 - Going Beyond Linear Transformers with Recurrent Fa.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/hash/3f9e3767ef3b10a0de4c256d7ef9805d-Abstract.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/hash/3f9e3767ef3b10a0de4c256d7ef9805d-Abstract.html
+      \endverb
+      \keyw{fast weight programmer,adaptive learning}
+    \endentry
+    \entry{jiang_thor_nodate}{article}{}
+      \name{author}{8}{}{%
+        {{hash=a91e014a59af240c37c0fc26432a125b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Albert\bibnamedelima Q},
+           giveni={A\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=f20a777b051351f3979860785cfdf253}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenda},
+           giveni={W\bibinitperiod}}}%
+        {{hash=22dfc61f58c33992be0b8d633a8633a8}{%
+           family={Tworkowski},
+           familyi={T\bibinitperiod},
+           given={Szymon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c5b1224768c765a5d03bd6a26af61368}{%
+           family={Czechowski},
+           familyi={C\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=718da3cae4d640023948e5affbb06618}{%
+           family={Odrzygózdz},
+           familyi={O\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5a17e7ebd2db76253e34037efe6b806d}{%
+           family={Mi{ł}os},
+           familyi={M\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=954bef435a12336c9decd19360a640f5}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuhuai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bdc3c5b421949a03945384567ebd4664}{%
+           family={Jamnik},
+           familyi={J\bibinitperiod},
+           given={Mateja},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{fullhash}{75df39c09f8fc320ff5a20b33b5d1dd1}
+      \strng{bibnamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authorbibnamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authornamehash}{066da2bf78c9b2e3d4c5f5a2cc6c4bff}
+      \strng{authorfullhash}{75df39c09f8fc320ff5a20b33b5d1dd1}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In theorem proving, the task of selecting useful premises from a large library to unlock the proof of a given conjecture is crucially important. This presents a challenge for all theorem provers, especially the ones based on language models, due to their relative inability to reason over huge volumes of premises in text form. This paper introduces Thor, a framework integrating language models and automated theorem provers to overcome this difficulty. In Thor, a class of methods called hammers that leverage the power of automated theorem provers are used for premise selection, while all other tasks are designated to language models. Thor increases a language model's success rate on the {PISA} dataset from 39\% to 57\%, while solving 8.2\% of problems neither language models nor automated theorem provers are able to solve on their own. Furthermore, with a significantly smaller computational budget, Thor can achieve a success rate on the {MiniF}2F dataset that is on par with the best existing methods. Thor can be instantiated for the majority of popular interactive theorem provers via a straightforward protocol we provide.}
+      \field{langid}{english}
+      \field{title}{Thor: Wielding Hammers to Integrate Language Models and Automated Theorem Provers}
+      \true{nocite}
+      \verb{file}
+      \verb Jiang et al. - Thor Wielding Hammers to Integrate Language Model.pdf:/Users/evandrake/Zotero/storage/QE8LDQGI/Jiang et al. - Thor Wielding Hammers to Integrate Language Model.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{lei_machine_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2150746612f079fba24a613b1b823eb6}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Siran},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4d22a57a5449e93ec57d241a860861eb}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e44456d6ff16f193af1570415ac01f1a}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Jianguo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b05676c42078eb5403349406a834f979}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3b13d7f1a32e5deb22280ce2004469c2}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Yongsheng},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{676e0a15fe46a4c3cd4f6ac6b6affe81}
+      \strng{fullhash}{4f3349d480dcaa2eb286fc5c72472257}
+      \strng{bibnamehash}{676e0a15fe46a4c3cd4f6ac6b6affe81}
+      \strng{authorbibnamehash}{676e0a15fe46a4c3cd4f6ac6b6affe81}
+      \strng{authornamehash}{676e0a15fe46a4c3cd4f6ac6b6affe81}
+      \strng{authorfullhash}{4f3349d480dcaa2eb286fc5c72472257}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An important development in geometric algebra in recent years is the new system known as point geometry, which treats points as direct objects of operations and considerably simplifies the process of geometric reasoning. In this paper, we provide a complete formal description of the point geometry theory architecture and give a rigorous and reliable formal verification of the point geometry theory based on the theorem prover Coq. Simultaneously, a series of tactics are also designed to assist in the proof of geometric propositions. Based on the theoretical architecture and proof tactics, a universal and scalable interactive point geometry machine proof system, {PointGeo}, is built. In this system, any arbitrary point-geometry-solvable geometric statement may be proven, along with readable information about the solution's procedure. Additionally, users may augment the rule base by adding trustworthy rules as needed for certain issues. The implementation of the system expands the library of Coq resources on geometric algebra, which will become a significant research foundation for the fields of geometric algebra, computer science, mathematics education, and other related fields.}
+      \field{day}{18}
+      \field{issn}{2227-7390}
+      \field{journaltitle}{Mathematics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{12}
+      \field{shortjournal}{Mathematics}
+      \field{title}{A Machine Proof System of Point Geometry Based on Coq}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{2757}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/math11122757
+      \endverb
+      \verb{file}
+      \verb out.pdf:/Users/evandrake/Downloads/out.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2227-7390/11/12/2757
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2227-7390/11/12/2757
+      \endverb
+    \endentry
+    \entry{li_automated_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5b7f11f9b16be3627b365c29c10d8c73}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Cheuk\bibnamedelima Ting},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \strng{fullhash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \strng{bibnamehash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \strng{authorbibnamehash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \strng{authornamehash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \strng{authorfullhash}{5b7f11f9b16be3627b365c29c10d8c73}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a versatile automated theorem proving framework capable of automated discovery, simplification and proofs of inner and outer bounds in network information theory, deduction of properties of information-theoretic quantities (e.g. Wyner and G{\textbackslash}'acs-K{\textbackslash}"orner common information), and discovery of non-Shannon-type inequalities, under a unified framework. Our implementation successfully generated proofs for 32 out of 56 theorems in Chapters 1-14 of the book Network Information Theory by El Gamal and Kim. Our framework is based on the concept of existential information inequalities, which provides an axiomatic framework for a wide range of problems in information theory.}
+      \field{day}{11}
+      \field{eprinttype}{arxiv}
+      \field{month}{7}
+      \field{number}{{arXiv}:2101.12370}
+      \field{title}{An Automated Theorem Proving Framework for Information-Theoretic Results}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2101.12370 [cs, math]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/NAZFYXAY/2101.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/PMGV7Y9H/Li - 2022 - An Automated Theorem Proving Framework for Informa.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2101.12370
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2101.12370
+      \endverb
+    \endentry
+    \entry{machowczyk_graph_2023}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=7e5e5b8ae8e4abcb2ba0a570fda11d83}{%
+           family={Machowczyk},
+           familyi={M\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=20696a0702b0be0ae86d1e0ed9b21682}{%
+           family={Heckel},
+           familyi={H\bibinitperiod},
+           given={Reiko},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \strng{fullhash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \strng{bibnamehash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \strng{authorbibnamehash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \strng{authornamehash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \strng{authorfullhash}{c46af2ec26ab7ba1cf6b603f05260e25}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given graphs as input, Graph Neural Networks ({GNNs}) support the inference of nodes, edges, attributes, or graph properties. Graph Rewriting investigates the rule-based manipulation of graphs to model complex graph transformations. We propose that, therefore, (i) graph rewriting subsumes {GNNs} and could serve as formal model to study and compare them, and (ii) the representation of {GNNs} as graph rewrite systems can help to design and analyse {GNNs}, their architectures and algorithms. Hence we propose Graph Rewriting Neural Networks ({GReNN}) as both novel semantic foundation and engineering discipline for {GNNs}. We develop a case study reminiscent of a Message Passing Neural Network realised as a Groove graph rewriting model and explore its incremental operation in response to dynamic updates.}
+      \field{day}{29}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{number}{{arXiv}:2305.18632}
+      \field{title}{Graph Rewriting for Graph Neural Networks}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2305.18632 [cs]
+      \endverb
+      \verb{file}
+      \verb Machowczyk and Heckel - 2023 - Graph Rewriting for Graph Neural Networks.pdf:/Users/evandrake/Zotero/storage/RPIWI6X5/Machowczyk and Heckel - 2023 - Graph Rewriting for Graph Neural Networks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.18632
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.18632
+      \endverb
+    \endentry
+    \entry{goos_functional_1991}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=900d6a577075a7cf7f2e6591ee25000b}{%
+           family={Meijer},
+           familyi={M\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=991b8525dad7d5f1ab094e66e2acfcac}{%
+           family={Fokkinga},
+           familyi={F\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f3f8610e67d8b56b596848671113178}{%
+           family={Paterson},
+           familyi={P\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=05db43db1a50c29c0eca01fd35ec8758}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editorb}{2}{}{%
+        {{hash=97b8779c08da200ee2eb194bdc10ae4f}{%
+           family={Goos},
+           familyi={G\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=84d4ea2bd3ec736effccd97ee64d09ef}{%
+           family={Hartmanis},
+           familyi={H\bibinitperiod},
+           given={Juris},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{fullhash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{bibnamehash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{authorbibnamehash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{authornamehash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{authorfullhash}{d83e82bbc98fc92bb1028e0ff2264694}
+      \strng{editorbibnamehash}{05db43db1a50c29c0eca01fd35ec8758}
+      \strng{editornamehash}{05db43db1a50c29c0eca01fd35ec8758}
+      \strng{editorfullhash}{05db43db1a50c29c0eca01fd35ec8758}
+      \strng{editorbbibnamehash}{06d8242b96fc1c5d63a33c385310040a}
+      \strng{editorbnamehash}{06d8242b96fc1c5d63a33c385310040a}
+      \strng{editorbfullhash}{06d8242b96fc1c5d63a33c385310040a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a calculus for lazy functional programming based on recursion operators associated with data type de nitions. For these operators we derive various algebraic laws that are useful in deriving and manipulating programs. We shall show that all example functions in Bird and Wadler's {\textbackslash}Introduction to Functional Programming" can be expressed using these operators.}
+      \field{booktitle}{Functional Programming Languages and Computer Architecture}
+      \field{editorbtype}{redactor}
+      \field{isbn}{978-3-540-54396-1 978-3-540-47599-6}
+      \field{langid}{english}
+      \field{note}{Series Title: Lecture Notes in Computer Science}
+      \field{title}{Functional programming with bananas, lenses, envelopes and barbed wire}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{523}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{124\bibrangedash 144}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/3540543961_7
+      \endverb
+      \verb{file}
+      \verb Meijer et al. - 1991 - Functional programming with bananas, lenses, envel.pdf:/Users/evandrake/Zotero/storage/33ARA7WG/Meijer et al. - 1991 - Functional programming with bananas, lenses, envel.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/3540543961_7
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/3540543961_7
+      \endverb
+    \endentry
+    \entry{miconi_backpropamine_2020}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=fd593c1d36aa14e37d60217788e12d6d}{%
+           family={Miconi},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f3b9c9f26d0a6f42c13be4baf0a5ab3c}{%
+           family={Rawal},
+           familyi={R\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ec864655608cdb84e55422b0797b6419}{%
+           family={Clune},
+           familyi={C\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5cc16358e7a37189d6bf128cdb501d24}
+      \strng{fullhash}{ff325d62ba04112e2e317408d269d0c5}
+      \strng{bibnamehash}{5cc16358e7a37189d6bf128cdb501d24}
+      \strng{authorbibnamehash}{5cc16358e7a37189d6bf128cdb501d24}
+      \strng{authornamehash}{5cc16358e7a37189d6bf128cdb501d24}
+      \strng{authorfullhash}{ff325d62ba04112e2e317408d269d0c5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The impressive lifelong learning in animal brains is primarily enabled by plastic changes in synaptic connectivity. Importantly, these changes are not passive, but are actively controlled by neuromodulation, which is itself under the control of the brain. The resulting self-modifying abilities of the brain play an important role in learning and adaptation, and are a major basis for biological reinforcement learning. Here we show for the first time that artificial neural networks with such neuromodulated plasticity can be trained with gradient descent. Extending previous work on differentiable Hebbian plasticity, we propose a differentiable formulation for the neuromodulation of plasticity. We show that neuromodulated plasticity improves the performance of neural networks on both reinforcement learning and supervised learning tasks. In one task, neuromodulated plastic {LSTMs} with millions of parameters outperform standard {LSTMs} on a benchmark language modeling task (controlling for the number of parameters). We conclude that differentiable neuromodulation of plasticity offers a powerful new framework for training neural networks.}
+      \field{annotation}{Miconi illustrates meta learning from a biological basis; examining their neuromodulative algorithm Backpropamine. An algorithm based on the meta learning of the human brain. The idea is taken from how humans learn; a human does not learn based on an immutable algorithm. Humans learn by mapping experience to action in a retro active manner. Miconi gives an algorithm for neuromodulation based on Hebbian plasticity; the weight of the connection i{\textasciitilde}j determines the adaption potential of neurons i and j. Miconi's Backpropamine is based on utilizing gradient decent to optimize the hebbian plasticity of each neural connection as a function of time. This paper gives an approach to meta learning that is not derived from fast weighted matrices. The idea of retro active evaluation can be implemented to assist in implementing a Godel machines' proofing mechanism.}
+      \field{day}{24}
+      \field{eprinttype}{arxiv}
+      \field{month}{2}
+      \field{number}{{arXiv}:2002.10585}
+      \field{shorttitle}{Backpropamine}
+      \field{title}{Backpropamine: training self-modifying neural networks with differentiable neuromodulated plasticity}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2002.10585 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/YYKFI7AT/2002.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/BMW46WY2/Miconi et al. - 2020 - Backpropamine training self-modifying neural netw.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb 2
+      \endverb
+      \verb{url}
+      \verb 2
+      \endverb
+      \keyw{self-reference,self modification,neuro science / brain inspired}
+    \endentry
+    \entry{munkhdalai_metalearning_2018}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e7ab376930e5f469550c42e5ede60377}{%
+           family={Munkhdalai},
+           familyi={M\bibinitperiod},
+           given={Tsendsuren},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c46d8fb3024b8539babffef11e653a9a}{%
+           family={Trischler},
+           familyi={T\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{76cfd3efc365ccade3af3e664c96e62f}
+      \strng{fullhash}{76cfd3efc365ccade3af3e664c96e62f}
+      \strng{bibnamehash}{76cfd3efc365ccade3af3e664c96e62f}
+      \strng{authorbibnamehash}{76cfd3efc365ccade3af3e664c96e62f}
+      \strng{authornamehash}{76cfd3efc365ccade3af3e664c96e62f}
+      \strng{authorfullhash}{76cfd3efc365ccade3af3e664c96e62f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We unify recent neural approaches to one-shot learning with older ideas of associative memory in a model for metalearning. Our model learns jointly to represent data and to bind class labels to representations in a single shot. It builds representations via slow weights, learned across tasks through {SGD}, while fast weights constructed by a Hebbian learning rule implement one-shot binding for each new task. On the Omniglot, Mini-{ImageNet}, and Penn Treebank one-shot learning benchmarks, our model achieves state-of-the-art results.}
+      \field{day}{12}
+      \field{eprinttype}{arxiv}
+      \field{month}{7}
+      \field{number}{{arXiv}:1807.05076}
+      \field{title}{Metalearning with Hebbian Fast Weights}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1807.05076 [cs, stat]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/9VVTT98I/1807.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/SZJFP8WB/Munkhdalai and Trischler - 2018 - Metalearning with Hebbian Fast Weights.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1807.05076
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1807.05076
+      \endverb
+      \keyw{neuro science / brain inspired}
     \endentry
     \entry{nasteski_overview_2017}{article}{}
       \name{author}{1}{}{%
@@ -121,6 +1707,389 @@
       \verb Full Text PDF:/Users/evandrake/Zotero/storage/T53DQ6Z7/Nasteski - 2017 - An overview of the supervised machine learning met.pdf:application/pdf
       \endverb
     \endentry
+    \entry{nawrocki_mini_2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=82ae7e99f6ddb6da08befa58b365d12f}{%
+           family={Nawrocki},
+           familyi={N\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cfafd92303aeabeddf093914ebfd8294}{%
+           family={Voyles},
+           familyi={V\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a85da8728b3147c117f262e6db188f2b}{%
+           family={Shaheen},
+           familyi={S\bibinitperiod},
+           given={Sean\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{50b2003514140e84337d5421b07aa3fb}
+      \strng{fullhash}{50b2003514140e84337d5421b07aa3fb}
+      \strng{bibnamehash}{50b2003514140e84337d5421b07aa3fb}
+      \strng{authorbibnamehash}{50b2003514140e84337d5421b07aa3fb}
+      \strng{authornamehash}{50b2003514140e84337d5421b07aa3fb}
+      \strng{authorfullhash}{50b2003514140e84337d5421b07aa3fb}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Neuromorphic architectures are hardware systems that aim to use the principles of neural function for their basis of operation. Their goal is to harness biologically inspired concepts such as weighted connections, activation thresholds, shortand long-term potentiation, and inhibition to solve problems in distributed computation. Compared with today's methods of emulating neural function in software on conventional von Neumann hardware, neuromorphic systems provide the promise of inherently low power and fault-tolerant operation directly implemented into hardware, for application in distributed and embedded computing tasks, where the vast scaling of today's architectures does not provide a long-term solution. This mini review is intended for a general engineering audience not currently familiar with this exciting research area. It provides descriptions of some of the recent advances, including supercomputer and single-device implementations, approaches based on spiking and nonspiking neurons, machine learning hardware accelerators, and those utilizing memristive devices. Hardware implementations utilizing both conventional electronic materials and organic electronic materials are reviewed.}
+      \field{issn}{0018-9383, 1557-9646}
+      \field{journaltitle}{{IEEE} Transactions on Electron Devices}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{{IEEE} Trans. Electron Devices}
+      \field{title}{A Mini Review of Neuromorphic Architectures and Implementations}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{63}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{3819\bibrangedash 3829}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TED.2016.2598413
+      \endverb
+      \verb{file}
+      \verb A_Mini_Review_of_Neuromorphic_Architectures_and_Implementations.pdf:/Users/evandrake/Documents/thesis/papers/A_Mini_Review_of_Neuromorphic_Architectures_and_Implementations.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/7549034/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/7549034/
+      \endverb
+    \endentry
+    \entry{neill_overview_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=852ec700c9c73e35cab742f747f93fd4}{%
+           family={Neill},
+           familyi={N\bibinitperiod},
+           given={James\bibnamedelima O'},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{852ec700c9c73e35cab742f747f93fd4}
+      \strng{fullhash}{852ec700c9c73e35cab742f747f93fd4}
+      \strng{bibnamehash}{852ec700c9c73e35cab742f747f93fd4}
+      \strng{authorbibnamehash}{852ec700c9c73e35cab742f747f93fd4}
+      \strng{authornamehash}{852ec700c9c73e35cab742f747f93fd4}
+      \strng{authorfullhash}{852ec700c9c73e35cab742f747f93fd4}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Overparameterized networks trained to convergence have shown impressive performance in domains such as computer vision and natural language processing. Pushing state of the art on salient tasks within these domains corresponds to these models becoming larger and more difficult for machine learning practitioners to use given the increasing memory and storage requirements, not to mention the larger carbon footprint. Thus, in recent years there has been a resurgence in model compression techniques, particularly for deep convolutional neural networks and self-attention based networks such as the Transformer.}
+      \field{day}{1}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{{arXiv}:2006.03669}
+      \field{title}{An Overview of Neural Network Compression}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2006.03669 [cs, stat]
+      \endverb
+      \verb{file}
+      \verb O'neill_survey_neural_net_compression.pdf.pdf:/Users/evandrake/Documents/thesis/papers/O'neill_survey_neural_net_compression.pdf.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2006.03669
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2006.03669
+      \endverb
+    \endentry
+    \entry{nichol_first-order_2018}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=fc19c0dc057e2a02419916b39da6895b}{%
+           family={Nichol},
+           familyi={N\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e9029ecf4d7c873909e2074c987301f3}{%
+           family={Achiam},
+           familyi={A\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e09bd2a25d237ebdaed560a07c0451e}{%
+           family={Schulman},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{110a5a67ba6159199411a3bce95436ea}
+      \strng{fullhash}{110a5a67ba6159199411a3bce95436ea}
+      \strng{bibnamehash}{110a5a67ba6159199411a3bce95436ea}
+      \strng{authorbibnamehash}{110a5a67ba6159199411a3bce95436ea}
+      \strng{authornamehash}{110a5a67ba6159199411a3bce95436ea}
+      \strng{authorfullhash}{110a5a67ba6159199411a3bce95436ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper considers meta-learning problems, where there is a distribution of tasks, and we would like to obtain an agent that performs well (i.e., learns quickly) when presented with a previously unseen task sampled from this distribution. We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order {MAML}, an approximation to {MAML} obtained by ignoring second-order derivatives. It also includes Reptile, a new algorithm that we introduce here, which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task. We expand on the results from Finn et al. showing that first-order meta-learning algorithms perform well on some well-established benchmarks for few-shot classification, and we provide theoretical analysis aimed at understanding why these algorithms work.}
+      \field{day}{22}
+      \field{eprinttype}{arxiv}
+      \field{month}{10}
+      \field{number}{{arXiv}:1803.02999}
+      \field{title}{On First-Order Meta-Learning Algorithms}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1803.02999 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/YNYNZHBE/1803.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/M2H7NDGE/Nichol et al. - 2018 - On First-Order Meta-Learning Algorithms.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1803.02999
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1803.02999
+      \endverb
+    \endentry
+    \entry{perlis_languages_1985}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d641f46e88485b5b4b389813d27b1b51}{%
+           family={Perlis},
+           familyi={P\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d641f46e88485b5b4b389813d27b1b51}
+      \strng{fullhash}{d641f46e88485b5b4b389813d27b1b51}
+      \strng{bibnamehash}{d641f46e88485b5b4b389813d27b1b51}
+      \strng{authorbibnamehash}{d641f46e88485b5b4b389813d27b1b51}
+      \strng{authornamehash}{d641f46e88485b5b4b389813d27b1b51}
+      \strng{authorfullhash}{d641f46e88485b5b4b389813d27b1b51}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{It is argued that a proper treatment of cognitive notions such as beliefs and concepts should allow broad and consistent expression of syntax and semantics, and that this in turn depends on self-reference. A theory of quotation and unquotation is presented to this end that appears to make unnecessary the usual hierarchical and non-first-order constructions for these notions. In the current paper (part I) the underlying theory is presented; a sequel will treat in more detail the applications to cognition.}
+      \field{issn}{00043702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Artificial Intelligence}
+      \field{shorttitle}{Languages with self-reference I}
+      \field{title}{Languages with self-reference I: Foundations}
+      \field{urlday}{11}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{25}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{301\bibrangedash 322}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/0004-3702(85)90075-X
+      \endverb
+      \verb{file}
+      \verb Perlis - 1985 - Languages with self-reference I Foundations.pdf:/Users/evandrake/Zotero/storage/5JBW6JVH/Perlis - 1985 - Languages with self-reference I Foundations.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/000437028590075X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/000437028590075X
+      \endverb
+    \endentry
+    \entry{polu_generative_2020}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=58103868767c5e3bfaf9c9ecf19a35d2}{%
+           family={Polu},
+           familyi={P\bibinitperiod},
+           given={Stanislas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{89a065475a84d823481092fe278fa615}
+      \strng{fullhash}{89a065475a84d823481092fe278fa615}
+      \strng{bibnamehash}{89a065475a84d823481092fe278fa615}
+      \strng{authorbibnamehash}{89a065475a84d823481092fe278fa615}
+      \strng{authornamehash}{89a065475a84d823481092fe278fa615}
+      \strng{authorfullhash}{89a065475a84d823481092fe278fa615}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We explore the application of transformer-based language models to automated theorem proving. This work is motivated by the possibility that a major limitation of automated theorem provers compared to humans -- the generation of original mathematical terms -- might be addressable via generation from language models. We present an automated prover and proof assistant, {GPT}-f, for the Metamath formalization language, and analyze its performance. {GPT}-f found new short proofs that were accepted into the main Metamath library, which is to our knowledge, the first time a deep-learning based system has contributed proofs that were adopted by a formal mathematics community.}
+      \field{day}{7}
+      \field{eprinttype}{arxiv}
+      \field{month}{9}
+      \field{number}{{arXiv}:2009.03393}
+      \field{title}{Generative Language Modeling for Automated Theorem Proving}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2009.03393 [cs, stat]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/TQXUC7IQ/2009.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/FGG395VW/Polu and Sutskever - 2020 - Generative Language Modeling for Automated Theorem.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2009.03393
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2009.03393
+      \endverb
+    \endentry
+    \entry{schlag_linear_2021}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b1f22cfa1f8c8f5aea7f45e6a6614d53}{%
+           family={Schlag},
+           familyi={S\bibinitperiod},
+           given={Imanol},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a6d632a869d9349cc7edad8941138455}{%
+           family={Irie},
+           familyi={I\bibinitperiod},
+           given={Kazuki},
+           giveni={K\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{e7cc7af60845ed8187ac2336c14f724b}
+      \strng{fullhash}{e7cc7af60845ed8187ac2336c14f724b}
+      \strng{bibnamehash}{e7cc7af60845ed8187ac2336c14f724b}
+      \strng{authorbibnamehash}{e7cc7af60845ed8187ac2336c14f724b}
+      \strng{authornamehash}{e7cc7af60845ed8187ac2336c14f724b}
+      \strng{authorfullhash}{e7cc7af60845ed8187ac2336c14f724b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show the formal equivalence of linearised self-attention mechanisms and fast weight controllers from the early '90s, where a slow neural net learns by gradient descent to program the fast weights of another net through sequences of elementary programming instructions which are additive outer products of self-invented activation patterns (today called keys and values). Such Fast Weight Programmers ({FWPs}) learn to manipulate the contents of a finite memory and dynamically interact with it. We infer a memory capacity limitation of recent linearised softmax attention variants, and replace the purely additive outer products by a delta rule-like programming instruction, such that the {FWP} can more easily learn to correct the current mapping from keys to values. The {FWP} also learns to compute dynamically changing learning rates. We also propose a new kernel function to linearise attention which balances simplicity and effectiveness. We conduct experiments on synthetic retrieval problems as well as standard machine translation and language modelling tasks which demonstrate the benefits of our methods.}
+      \field{booktitle}{Proceedings of the 38th International Conference on Machine Learning}
+      \field{day}{1}
+      \field{eventtitle}{International Conference on Machine Learning}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{note}{{ISSN}: 2640-3498}
+      \field{title}{Linear Transformers Are Secretly Fast Weight Programmers}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{9355\bibrangedash 9366}
+      \range{pages}{12}
+      \verb{file}
+      \verb Full Text PDF:/Users/evandrake/Zotero/storage/CLBZ9BV9/Schlag et al. - 2021 - Linear Transformers Are Secretly Fast Weight Progr.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://proceedings.mlr.press/v139/schlag21a.html
+      \endverb
+      \verb{url}
+      \verb https://proceedings.mlr.press/v139/schlag21a.html
+      \endverb
+      \keyw{fast weight programmer,adaptive learning}
+    \endentry
+    \entry{schlag_learning_2021}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=b1f22cfa1f8c8f5aea7f45e6a6614d53}{%
+           family={Schlag},
+           familyi={S\bibinitperiod},
+           given={Imanol},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e7ab376930e5f469550c42e5ede60377}{%
+           family={Munkhdalai},
+           familyi={M\bibinitperiod},
+           given={Tsendsuren},
+           giveni={T\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \strng{fullhash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \strng{bibnamehash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \strng{authorbibnamehash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \strng{authornamehash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \strng{authorfullhash}{d9432e48266bbc5eaa2800fb698b50d1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Humans can quickly associate stimuli to solve problems in novel contexts. Our novel neural network model learns state representations of facts that can be composed to perform such associative inference. To this end, we augment the {LSTM} model with an associative memory, dubbed Fast Weight Memory ({FWM}). Through differentiable operations at every step of a given input sequence, the {LSTM} updates and maintains compositional associations stored in the rapidly changing {FWM} weights. Our model is trained end-to-end by gradient descent and yields excellent performance on compositional language reasoning problems, meta-reinforcement-learning for {POMDPs}, and small-scale word-level language modelling.}
+      \field{day}{23}
+      \field{eprinttype}{arxiv}
+      \field{month}{2}
+      \field{number}{{arXiv}:2011.07831}
+      \field{title}{Learning Associative Inference Using Fast Weight Memory}
+      \field{urlday}{24}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2011.07831 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/47D827BH/2011.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/U6LE455W/Schlag et al. - 2021 - Learning Associative Inference Using Fast Weight M.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2011.07831
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2011.07831
+      \endverb
+      \keyw{adaptive learning}
+    \endentry
     \entry{schmidhuber_self-referential_1993}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=07e9fb186fd9976e6be82e64365dc308}{%
@@ -156,6 +2125,7 @@
       \strng{editorbibnamehash}{e529d4e7240fdf7852fad9d5d420fd07}
       \strng{editornamehash}{e529d4e7240fdf7852fad9d5d420fd07}
       \strng{editorfullhash}{e529d4e7240fdf7852fad9d5d420fd07}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -187,6 +2157,887 @@
       \verb https://mediatum.ub.tum.de/doc/814784/document.pdf
       \endverb
       \keyw{self-reference,self modification,fast weight programmer,adaptive learning}
+    \endentry
+    \entry{schmidhuber_godel_2006-1}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2333709f91a1b22edafa71582c31e391}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Juergen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{fullhash}{2333709f91a1b22edafa71582c31e391}
+      \strng{bibnamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authorbibnamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authornamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authorfullhash}{2333709f91a1b22edafa71582c31e391}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present the first class of mathematically rigorous, general, fully self-referential, self-improving, optimally efficient problem solvers. Inspired by Kurt Goedel's celebrated self-referential formulas (1931), such a problem solver rewrites any part of its own code as soon as it has found a proof that the rewrite is useful, where the problem-dependent utility function and the hardware and the entire initial code are described by axioms encoded in an initial proof searcher which is also part of the initial code. The searcher systematically and efficiently tests computable proof techniques (programs whose outputs are proofs) until it finds a provably useful, computable self-rewrite. We show that such a self-rewrite is globally optimal - no local maxima! - since the code first had to prove that it is not useful to continue the proof search for alternative self-rewrites. Unlike previous non-self-referential methods based on hardwired proof searchers, ours not only boasts an optimal order of complexity but can optimally reduce any slowdowns hidden by the O()-notation, provided the utility of such speed-ups is provable at all.}
+      \field{day}{17}
+      \field{eprinttype}{arxiv}
+      \field{month}{12}
+      \field{number}{{arXiv}:cs.{LO}/0309048}
+      \field{shorttitle}{Goedel Machines}
+      \field{title}{Godel machine poster}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb cs.LO/0309048
+      \endverb
+      \verb{file}
+      \verb Godel machine poster:/Users/evandrake/Zotero/storage/HLBKW4BR/Godel machine poster.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/cs/0309048
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/cs/0309048
+      \endverb
+    \endentry
+    \entry{schmidhuber_godel_2006}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2333709f91a1b22edafa71582c31e391}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Juergen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{fullhash}{2333709f91a1b22edafa71582c31e391}
+      \strng{bibnamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authorbibnamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authornamehash}{2333709f91a1b22edafa71582c31e391}
+      \strng{authorfullhash}{2333709f91a1b22edafa71582c31e391}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present the first class of mathematically rigorous, general, fully self-referential, self-improving, optimally efficient problem solvers. Inspired by Kurt Goedel's celebrated self-referential formulas (1931), such a problem solver rewrites any part of its own code as soon as it has found a proof that the rewrite is useful, where the problem-dependent utility function and the hardware and the entire initial code are described by axioms encoded in an initial proof searcher which is also part of the initial code. The searcher systematically and efficiently tests computable proof techniques (programs whose outputs are proofs) until it finds a provably useful, computable self-rewrite. We show that such a self-rewrite is globally optimal - no local maxima! - since the code first had to prove that it is not useful to continue the proof search for alternative self-rewrites. Unlike previous non-self-referential methods based on hardwired proof searchers, ours not only boasts an optimal order of complexity but can optimally reduce any slowdowns hidden by the O()-notation, provided the utility of such speed-ups is provable at all.}
+      \field{annotation}{The Godel Machine is something of an {AGI} (artificial general intelligence). The general frame work, works on the premise that one can compare two supposedly sub-optimal problems and glean which is closer to optimality. The machine itself can theoretically be given any goal and improve in operating on that goal endlessly. The Godel machine will introspectively reflect and build theories that will eventually become proofs (given that a proof is possible). These proofs are the comparison between a state f and its successive state f'. If the machine can prove f' {>} f then it will whole sale replace f with f'. The Godel machine is built around a sequence of proofing mechanisms allowing it to trivialize its proofing procedure. This paper does not fit into my three pillars of meta learning however this is obviously a type of meta learning algorithm. This paper serves to guide my investigation into introspective proof based meta learning.}
+      \field{day}{17}
+      \field{eprinttype}{arxiv}
+      \field{month}{12}
+      \field{number}{{arXiv}:cs/0309048}
+      \field{shorttitle}{Godel Machines}
+      \field{title}{Godel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb cs/0309048
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/DJE2U6PA/0309048.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/DQKBH3RG/Schmidhuber - 2006 - Goedel Machines Self-Referential Universal Proble.pdf:application/pdf;Godel machine annotated:/Users/evandrake/Documents/Thesis/thesis_sup/papers/Godel machine annotated.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/cs/0309048
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/cs/0309048
+      \endverb
+      \keyw{self-reference,self modification,proof theory,introspective}
+    \endentry
+    \entry{schmidhuber_introspectivenetwork_1993}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IET}%
+      }
+      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{1993 third international conference on artificial neural networks}
+      \field{title}{An'introspective'network that can learn to run its own weight change algorithm}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{191\bibrangedash 194}
+      \range{pages}{4}
+      \verb{file}
+      \verb document.pdf:/Users/evandrake/Zotero/storage/HYI2Y9SJ/document.pdf:application/pdf
+      \endverb
+      \keyw{introspective}
+    \endentry
+    \entry{schmidhuber_gomachines_2005}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=752e7b3c05f8277152ea44286065a69f}{%
+           family={Kudenko},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f11f4601e1749bc2699f258472cf27b0}{%
+           family={Kazakov},
+           familyi={K\bibinitperiod},
+           given={Dimitar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=323111175d843c8c67f0a5e46230e164}{%
+           family={Alonso},
+           familyi={A\bibinitperiod},
+           given={Eduardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{editorb}{15}{}{%
+        {{hash=d003d9a994005f480f7fa06dde74326e}{%
+           family={Hutchison},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=45496c6a7530cfbfb4f3218a2602b77e}{%
+           family={Kanade},
+           familyi={K\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9dd3a56c94774f5880ca7475fdc308ea}{%
+           family={Kittler},
+           familyi={K\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fb11814963625d418100ec9ca3710333}{%
+           family={Kleinberg},
+           familyi={K\bibinitperiod},
+           given={Jon\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e07c4272d13053fc36d770d4735f2c14}{%
+           family={Mattern},
+           familyi={M\bibinitperiod},
+           given={Friedemann},
+           giveni={F\bibinitperiod}}}%
+        {{hash=47dbc192a926109dd86ea18b25249a93}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c6af39e79e88306281e6e0b0ccea956c}{%
+           family={Naor},
+           familyi={N\bibinitperiod},
+           given={Moni},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d3ea70a5274b32c8a184dd4d844ee47}{%
+           family={Nierstrasz},
+           familyi={N\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6bcab2334dc65214139b0ad45fe8185e}{%
+           family={Pandu\bibnamedelima Rangan},
+           familyi={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=665b6687b4ed05721bf55d61032505ca}{%
+           family={Steffen},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8753fbfaaa4aa8a1195c657edc9daef4}{%
+           family={Sudan},
+           familyi={S\bibinitperiod},
+           given={Madhu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cd9aa5de7673e375889cc32997ef97df}{%
+           family={Terzopoulos},
+           familyi={T\bibinitperiod},
+           given={Demetri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ddfb7c40f1ab7e805c025ac7ef922cc7}{%
+           family={Tygar},
+           familyi={T\bibinitperiod},
+           given={Dough},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a4cf237a06b02ad7e7601b14b4d005be}{%
+           family={Vardi},
+           familyi={V\bibinitperiod},
+           given={Moshe\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e47f9d085c16045a5911784850208ada}{%
+           family={Weikum},
+           familyi={W\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{editorbibnamehash}{4ba440940b0c7ce30e6b09a4859282ab}
+      \strng{editornamehash}{4ba440940b0c7ce30e6b09a4859282ab}
+      \strng{editorfullhash}{4ba440940b0c7ce30e6b09a4859282ab}
+      \strng{editorbbibnamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
+      \strng{editorbnamehash}{1878e5aaeb2ba2e2aaa5cb8a1a7cf207}
+      \strng{editorbfullhash}{fb5e2fa0f3717a2212ecb8c106779a7f}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The growing literature on consciousness does not provide a formal demonstration of the usefulness of consciousness. Here we point out that the recently formulated Go¨del machines may provide just such a technical justification. They are the first mathematically rigorous, general, fully self-referential, self-improving, optimally efficient problem solvers, ``conscious'' or ``self-aware'' in the sense that their entire behavior is open to introspection, and modifiable. A Go¨del machine is a computer that rewrites any part of its own initial code as soon as it finds a proof that the rewrite is useful, where the problem-dependent utility function, the hardware, and the entire initial code are described by axioms encoded in an initial asymptotically optimal proof searcher which is also part of the initial code. This type of total self-reference is precisely the reason for the Go¨del machine's optimality as a general problem solver: any self-rewrite is globally optimal---no local maxima!---since the code first had to prove that it is not useful to continue the proof search for alternative self-rewrites.}
+      \field{booktitle}{Adaptive Agents and Multi-Agent Systems {II}}
+      \field{editorbtype}{redactor}
+      \field{isbn}{978-3-540-25260-3 978-3-540-32274-0}
+      \field{langid}{english}
+      \field{note}{Series Title: Lecture Notes in Computer Science}
+      \field{shorttitle}{Gödel Machines}
+      \field{title}{Gödel Machines: Towards a Technical Justification of Consciousness}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{3394}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/978-3-540-32274-0_1
+      \endverb
+      \verb{file}
+      \verb Schmidhuber - 2005 - G{\"o}del Machines Towards a Technical Justification .pdf:/Users/evandrake/Zotero/storage/GRTEL3A2/Schmidhuber - 2005 - G{\"o}del Machines Towards a Technical Justification .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-540-32274-0_1
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-540-32274-0_1
+      \endverb
+    \endentry
+    \entry{schmidhuber_learning_1992}{article}{}
+      \name{author}{1}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \field{extraname}{6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computation}
+      \field{note}{Publisher: {MIT} Press}
+      \field{number}{2}
+      \field{title}{Learning complex, extended sequences using the principle of history compression}
+      \field{volume}{4}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{234\bibrangedash 242}
+      \range{pages}{9}
+      \verb{file}
+      \verb document.pdf:/Users/evandrake/Zotero/storage/6LIVELQY/document.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{schmidhuber_learning_1992-1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \field{extraname}{7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computation}
+      \field{note}{Publisher: {MIT} Press One Rogers Street, Cambridge, {MA} 02142-1209, {USA} journals-info {\ldots}}
+      \field{number}{1}
+      \field{title}{Learning to control fast-weight memories: An alternative to dynamic recurrent networks}
+      \field{volume}{4}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{131\bibrangedash 139}
+      \range{pages}{9}
+      \verb{file}
+      \verb document.pdf:/Users/evandrake/Zotero/storage/EMDRXL7L/document.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{schmidhuber_ultimate_2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
+      \field{extraname}{8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{All life is problem solving,'' said Popper. To deal with arbitrary problems in arbitrary environments, an ultimate cognitive agent should use its limited hardware in the ``best'' and ``most efficient'' possible way. Can we formally nail down this informal statement, and derive a mathematically rigorous blueprint of ultimate cognition? Yes, we can, using Kurt Go¨del's celebrated self-reference trick of 1931 in a new way. Go¨del exhibited the limits of mathematics and computation by creating a formula that speaks about itself, claiming to be unprovable by an algorithmic theorem prover: either the formula is true but unprovable, or math itself is flawed in an algorithmic sense. Here we describe an agent-controlling program that speaks about itself, ready to rewrite itself in arbitrary fashion once it has found a proof that the rewrite is useful according to a user-defined utility function. Any such a rewrite is necessarily globally optimal---no local maxima!---since this proof necessarily must have demonstrated the uselessness of continuing the proof search for even better rewrites. Our self-referential program will optimally speed up its proof searcher and other program parts, but only if the speed up's utility is indeed provable---even ultimate cognition has limits of the Go¨delian kind.}
+      \field{issn}{1866-9956, 1866-9964}
+      \field{journaltitle}{Cognitive Computation}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Cogn Comput}
+      \field{title}{Ultimate Cognition à la Gödel}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{1}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{177\bibrangedash 193}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s12559-009-9014-y
+      \endverb
+      \verb{file}
+      \verb Schmidhuber - 2009 - Ultimate Cognition {\`a} la G{\"o}del.pdf:/Users/evandrake/Zotero/storage/P2VUZHIP/Schmidhuber - 2009 - Ultimate Cognition {\`a} la G{\"o}del.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s12559-009-9014-y
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s12559-009-9014-y
+      \endverb
+    \endentry
+    \entry{schmidhuber_1998}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cb42c4408633a5325cfa1f83f0c50aa9}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jieyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e2ef8b3c99c2f2e819e142044a95c2ef}{%
+           family={Schraudolph},
+           familyi={S\bibinitperiod},
+           given={Nicol\bibnamedelima N},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c8da884fe2afbe6bd663c09268852663}{%
+           family={Pratt},
+           familyi={P\bibinitperiod},
+           given={Lorien},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, {MA}}%
+      }
+      \list{publisher}{1}{%
+        {Springer {US}}%
+      }
+      \strng{namehash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{fullhash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{bibnamehash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{authorbibnamehash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{authornamehash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{authorfullhash}{e7c2760b544e8b59c9b2596f5bd34898}
+      \strng{editorbibnamehash}{3effb0a63261b791465f7f590a922cd0}
+      \strng{editornamehash}{3effb0a63261b791465f7f590a922cd0}
+      \strng{editorfullhash}{3effb0a63261b791465f7f590a922cd0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A learner's modifiable components are called its policy. An algorithm that modifies the policy is a learning algorithm. If the learning algorithm has modifiable components represented as part of the policy, then we speak of a self-modifying policy ({SMP}). {SMPs} can modify the way they modify themselves etc. They are of interest in situations where the initial learning algorithm itself can be improved by experience --- this is what we call ``learning to learn''. How can we force some (stochastic) {SMP} to trigger better and better self-modifications? The success-story algorithm ({SSA}) addresses this question in a lifelong reinforcement learning context. During the learner's life-time, {SSA} is occasionally called at times computed according to {SMP} itself. {SSA} uses backtracking to undo those {SMP}-generated {SMP}-modifications that have not been empirically observed to trigger lifelong reward accelerations (measured up until the current {SSA} call --- this evaluates the long-term effects of {SMP}-modifications setting the stage for later {SMP}-modifications). {SMP}-modifications that survive {SSA} represent a lifelong success history. Until the next {SSA} call, they build the basis for additional {SMP}-modifications. Solely by self-modifications our {SMP}/{SSA}-based learners solve a complex task in a partially observable environment ({POE}) whose state space is far bigger than most reported in the {POE} literature.}
+      \field{booktitle}{Learning to \{Learn\}}
+      \field{isbn}{978-1-4613-7527-2 978-1-4615-5529-2}
+      \field{title}{Reinforcement \{Learning\} with \{Self\}-\{Modifying\} \{Policies\}}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{293\bibrangedash 309}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-1-4615-5529-2_12
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/evandrake/Zotero/storage/Q2QPK2UU/Schmidhuber et al. - 1998 - Reinforcement Learning with Self-Modifying Policie.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-1-4615-5529-2_12
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-1-4615-5529-2_12
+      \endverb
+      \keyw{self modification}
+    \endentry
+    \entry{steunebrink_towards_2012}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=749800af35cb287c88e048ab7198f54c}{%
+           family={Steunebrink},
+           familyi={S\bibinitperiod},
+           given={Bas\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c378c79f986b90d904e28ddc74652b59}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={{JÃ}¼rgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=f57aebc86497dbabb1c6d95647639a1a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Pei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d00baed2f90b47ae52840783b7ac55e4}{%
+           family={Goertzel},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Atlantis Press}%
+      }
+      \strng{namehash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{fullhash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{bibnamehash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{authorbibnamehash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{authornamehash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{authorfullhash}{290111a3d3a2203660f7ca1129561be7}
+      \strng{editorbibnamehash}{e411f1a9a2037a057dc9730a2a2a0b03}
+      \strng{editornamehash}{e411f1a9a2037a057dc9730a2a2a0b03}
+      \strng{editorfullhash}{e411f1a9a2037a057dc9730a2a2a0b03}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{annotation}{This paper describes the Godel machine in respect to its implementation. There is a good dissection of a Godel machine describing its parts both pictorially and inscribed. There is a description of the intended scheduling system of a Godel machine which works to describe the implementation of its parts. The paper also gives a representation of a Godel machine in raw lambda calculus clearly defining the perceived implementation. This paper assists both in my understanding of Godel machines and in my pursuit to describe the implementation of one with more fine grained detail.}
+      \field{booktitle}{Theoretical Foundations of Artificial General Intelligence}
+      \field{isbn}{978-94-91216-61-9 978-94-91216-62-6}
+      \field{langid}{english}
+      \field{note}{Series Title: Atlantis Thinking Machines}
+      \field{shorttitle}{Towards an Actual Gödel Machine Implementation}
+      \field{title}{Towards an Actual Gödel Machine Implementation: a Lesson in Self-Reflective Systems}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{173\bibrangedash 195}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.2991/978-94-91216-62-6_10
+      \endverb
+      \verb{file}
+      \verb Steunebrink and Schmidhuber - 2012 - Towards an Actual G{\"o}del Machine Implementation a .pdf:/Users/evandrake/Zotero/storage/3JQC8FIX/Steunebrink and Schmidhuber - 2012 - Towards an Actual G{\"o}del Machine Implementation a .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.atlantis-press.com/doi/10.2991/978-94-91216-62-6_10
+      \endverb
+      \verb{url}
+      \verb https://www.atlantis-press.com/doi/10.2991/978-94-91216-62-6_10
+      \endverb
+    \endentry
+    \entry{sutcliffe_evaluating_2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dd1c8983ac85362d3aa2a529a62b0620}{%
+           family={Sutcliffe},
+           familyi={S\bibinitperiod},
+           given={Geoff},
+           giveni={G\bibinitperiod}}}%
+        {{hash=730cf5ce31e18ba17edeb64bca57f1a6}{%
+           family={Suttner},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2336109fb4f39fd024a77c66937f874e}
+      \strng{fullhash}{2336109fb4f39fd024a77c66937f874e}
+      \strng{bibnamehash}{2336109fb4f39fd024a77c66937f874e}
+      \strng{authorbibnamehash}{2336109fb4f39fd024a77c66937f874e}
+      \strng{authornamehash}{2336109fb4f39fd024a77c66937f874e}
+      \strng{authorfullhash}{2336109fb4f39fd024a77c66937f874e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{This serves as my guide to automated theorem proving and related fields.}
+      \field{issn}{00043702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{1}
+      \field{shortjournal}{Artificial Intelligence}
+      \field{title}{Evaluating general purpose automated theorem proving systems}
+      \field{urlday}{25}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{131}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{39\bibrangedash 54}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/S0004-3702(01)00113-8
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/Users/evandrake/Zotero/storage/ERGHRXC2/Sutcliffe and Suttner - 2001 - Evaluating general purpose automated theorem provi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0004370201001138
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0004370201001138
+      \endverb
+    \endentry
+    \entry{symons_self-reference_1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8518833233324ac9f7f0380d7c30dc0f}{%
+           family={Symons},
+           familyi={S\bibinitperiod},
+           given={Cynthia\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=835e9d6e1240abf002659a7cefc39651}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Blair\bibnamedelima T},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{99991add09f03b7efccf063e27e9bad6}
+      \strng{fullhash}{99991add09f03b7efccf063e27e9bad6}
+      \strng{bibnamehash}{99991add09f03b7efccf063e27e9bad6}
+      \strng{authorbibnamehash}{99991add09f03b7efccf063e27e9bad6}
+      \strng{authornamehash}{99991add09f03b7efccf063e27e9bad6}
+      \strng{authorfullhash}{99991add09f03b7efccf063e27e9bad6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological bulletin}
+      \field{note}{Publisher: American Psychological Association}
+      \field{number}{3}
+      \field{title}{The self-reference effect in memory: a meta-analysis.}
+      \field{volume}{121}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{371}
+      \range{pages}{1}
+      \verb{file}
+      \verb Symons and Johnson - The Self-Reference Effect in Memory A Meta-Analys.pdf:/Users/evandrake/Zotero/storage/5RZXK4XB/Symons and Johnson - The Self-Reference Effect in Memory A Meta-Analys.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{tran_generalization_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=df47c822d0d985d031e199a49c2421fb}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Van-Nhan},
+           giveni={V\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=688819a21a55c9ff68bde40bcd0d80db}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Seong-Geun},
+           giveni={S\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=11809e9788155b0997fb9fb0feb30135}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Suk-Hwan},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=aa00a521147ab429e546e77f28ca4c4c}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Hoanh-Su},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=d36331f77bec91c59ba1e87b4cddec0d}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Ki-Ryong},
+           giveni={K\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{97d00973bd10b9606160cf8ae65b0dde}
+      \strng{fullhash}{051cc369f47ac9f127bee9e23c165e63}
+      \strng{bibnamehash}{97d00973bd10b9606160cf8ae65b0dde}
+      \strng{authorbibnamehash}{97d00973bd10b9606160cf8ae65b0dde}
+      \strng{authornamehash}{97d00973bd10b9606160cf8ae65b0dde}
+      \strng{authorfullhash}{051cc369f47ac9f127bee9e23c165e63}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Face forgery generating algorithms that produce a range of manipulated videos/images have developed quickly. Consequently, this causes an increase in the production of fake information, making it difficult to identify. Because facial manipulation technologies raise severe concerns, face forgery detection is gaining increasing attention in the area of computer vision. In real-world applications, face forgery detection systems frequently encounter and perform poorly in unseen domains, due to poor generalization. In this paper, we propose a deepfake detection method based on meta-learning called Meta Deepfake Detection ({MDD}). The goal of the model is to develop a generalized model capable of directly solving new unseen domains without the need for model updates. The {MDD} algorithm establishes various weights for facial images from various domains. Specifically, {MDD} uses meta-weight learning to shift information from the source domains to the target domains with meta-optimization steps, which aims for the model to generate effective representations of the source and target domains. We build multi-domain sets using meta splitting strategy to create a meta-train set and meta-test set. Based on these sets, the model determines the gradient descent and obtains backpropagation. The inner and outer loop gradients were aggregated to update the model to enhance generalization. By introducing pair-attention loss and average-center alignment loss, the detection capabilities of the system were substantially enhanced. In addition, we used some evaluation benchmarks established from several popular deepfake datasets to compare the generalization of our proposal in several baselines and assess its effectiveness.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{{IEEE} Access}
+      \field{langid}{english}
+      \field{shortjournal}{{IEEE} Access}
+      \field{title}{Generalization of Forgery Detection With Meta Deepfake Detection Model}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{535\bibrangedash 546}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3232290
+      \endverb
+      \verb{file}
+      \verb Tran et al. - 2023 - Generalization of Forgery Detection With Meta Deep.pdf:/Users/evandrake/Zotero/storage/FVZRK2KF/Tran et al. - 2023 - Generalization of Forgery Detection With Meta Deep.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9999180/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9999180/
+      \endverb
+    \endentry
+    \entry{vanschoren_meta-learning_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4ce3afeba4f8f866dbad8e5b02118406}{%
+           family={Vanschoren},
+           familyi={V\bibinitperiod},
+           given={Joaquin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \strng{fullhash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \strng{bibnamehash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \strng{authorbibnamehash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \strng{authornamehash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \strng{authorfullhash}{4ce3afeba4f8f866dbad8e5b02118406}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Meta-learning, or learning to learn, is the science of systematically observing how different machine learning approaches perform on a wide range of learning tasks, and then learning from this experience, or meta-data, to learn new tasks much faster than otherwise possible. Not only does this dramatically speed up and improve the design of machine learning pipelines or neural architectures, it also allows us to replace hand-engineered algorithms with novel approaches learned in a data-driven way. In this chapter, we provide an overview of the state of the art in this fascinating and continuously evolving field.}
+      \field{day}{8}
+      \field{eprinttype}{arxiv}
+      \field{month}{10}
+      \field{number}{{arXiv}:1810.03548}
+      \field{shorttitle}{Meta-Learning}
+      \field{title}{Meta-Learning: A Survey}
+      \field{urlday}{20}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1810.03548 [cs, stat]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/HDBSHQDQ/1810.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/YUNFNVH6/Vanschoren - 2018 - Meta-Learning A Survey.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1810.03548
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1810.03548
+      \endverb
+      \keyw{survey}
+    \endentry
+    \entry{whalen_holophrasm_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0bb64d9af9d778ca277d2fd9d6ae12c0}{%
+           family={Whalen},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \strng{fullhash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \strng{bibnamehash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \strng{authorbibnamehash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \strng{authornamehash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \strng{authorfullhash}{0bb64d9af9d778ca277d2fd9d6ae12c0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{I propose a system for Automated Theorem Proving in higher order logic using deep learning and eschewing hand-constructed features. Holophrasm exploits the formalism of the Metamath language and explores partial proof trees using a neural-network-augmented bandit algorithm and a sequence-to-sequence model for action enumeration. The system proves 14\% of its test theorems from Metamath's set.mm module.}
+      \field{day}{9}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{number}{{arXiv}:1608.02644}
+      \field{shorttitle}{Holophrasm}
+      \field{title}{Holophrasm: a neural Automated Theorem Prover for higher-order logic}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 1608.02644 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/evandrake/Zotero/storage/CCAE4JQL/1608.html:text/html;Full Text PDF:/Users/evandrake/Zotero/storage/CYVTPGIX/Whalen - 2016 - Holophrasm a neural Automated Theorem Prover for .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1608.02644
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1608.02644
+      \endverb
+    \endentry
+    \entry{zou_breaking_2021}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c43159eab67756b27bf73b3e71486716}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Xingqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0d25ef231ae9d36fe0f48c3d4679ca65}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e88ebcf30c031ae9c4ee7f8334da3875}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaoming},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b5d1f91c492f5c5750c097c812082ef5}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8d8a3f556e48c279a12041db46f1e47c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Yinhe},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{05e5be7fa42b5975567eb6207c1e1783}
+      \strng{fullhash}{a4ef01f372a8c54ba168af5b0c4b2688}
+      \strng{bibnamehash}{05e5be7fa42b5975567eb6207c1e1783}
+      \strng{authorbibnamehash}{05e5be7fa42b5975567eb6207c1e1783}
+      \strng{authornamehash}{05e5be7fa42b5975567eb6207c1e1783}
+      \strng{authorfullhash}{a4ef01f372a8c54ba168af5b0c4b2688}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The ``memory wall'' problem or so-called von Neumann bottleneck limits the efficiency of conventional computer architectures, which move data from memory to {CPU} for computation; these architectures cannot meet the demands of the emerging memory-intensive applications. Processing-in-memory ({PIM}) has been proposed as a promising solution to break the von Neumann bottleneck by minimizing data movement between memory hierarchies. This study focuses on prior art of architecture level {DRAM} {PIM} technologies and their implementation. The key challenges and mainstream solutions of {PIM} are summarized and introduced. The relative limitations of {PIM} simulation are discussed, as well as four conventional {PIM} simulators. Finally, research directions and perspectives are proposed for future development.}
+      \field{issn}{1674-733X, 1869-1919}
+      \field{journaltitle}{Science China Information Sciences}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Sci. China Inf. Sci.}
+      \field{shorttitle}{Breaking the von Neumann bottleneck}
+      \field{title}{Breaking the von Neumann bottleneck: architecture-level processing-in-memory technology}
+      \field{urlday}{18}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{64}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{160404}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11432-020-3227-1
+      \endverb
+      \verb{file}
+      \verb Xingqi, breaking von Neumann bottleneck.pdf:/Users/evandrake/Documents/thesis/papers/Xingqi, breaking von Neumann bottleneck.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s11432-020-3227-1
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s11432-020-3227-1
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

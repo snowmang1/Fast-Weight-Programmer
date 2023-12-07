@@ -1,0 +1,22 @@
+%TODO: explain lack of results and then explain the results that have been found are not conclusive
+The tangible results from this experiment are negligible at best and misleading at worst. However for
+the purposes of this mock paper I will call them inconclusive. I was able to play the game twice with
+both version of the machine using GHCI to put the library together. The way I did this is not in the least
+reproducible, I used the interpreter and the structure of Haskell's monads system to (fake) a production
+ready system. Using this interpreter state I was able to play to completion two games with both machines,
+taking around three to four hours a game.
+
+%TODO: Add a graph visualization to indicate such a trend
+\begin{center} \textbf{Average hours of run time to game completion} \end{center}
+\begin{tikzpicture}
+\begin{axis}[
+    symbolic x coords={FWP, Decision Matrix},
+				ylabel = {Avg hours},
+        xlabel = {Algorithms},
+    xtick=data]
+    \addplot[ybar] coordinates {
+    (FWP,3.75)
+    (Decision Matrix,4)
+    };
+\end{axis}
+\end{tikzpicture}
