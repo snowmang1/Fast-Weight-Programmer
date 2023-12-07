@@ -1,5 +1,3 @@
-\textcolor{red}{Is it worth adding a diagram to this section? Or is the point clear in simple text?}
-
 \begin{prop} \label{prop:1}
 	If a SRWM and a weighted matrix are to play the same game of checkers with no training phase the SRWM
 	will play more efficiently.

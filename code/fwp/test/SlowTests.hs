@@ -1,5 +1,7 @@
 module SlowTests(
   slowTests,
+  testWeightBoard,
+  testBoard
 ) where
 
 import Data.Matrix

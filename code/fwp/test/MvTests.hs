@@ -12,6 +12,7 @@ import Test.Tasty.HUnit
 
 import qualified Lib
 import qualified Board
+import qualified SlowTests
 
 forwardRed :: Int -> Int -> Matrix Board.Board
 forwardRed r c = setElem Board.Empty (r,c) (setElem Board.Red (r+1,c) (fromLists testBoard))
@@ -74,7 +75,13 @@ moveTests = testGroup "movement tests"
   testCase "White Backward 6 3" $
   Lib.move 6 3 Lib.Backward (fromLists testBoard) @?= Just (backwardWhite 6 3),
   testCase "White Backward 8 1" $
-  Lib.move 8 1 Lib.Backward (fromLists testBoard) @?= Nothing
+  Lib.move 8 1 Lib.Backward (fromLists testBoard) @?= Nothing,
+
+  -- choose tests
+  testCase "getBestMove simple test" $
+  Lib.getBestMove SlowTests.testWeightBoard SlowTests.testBoard Board.White @?= (0,0),
+  testCase "maxWeights simple test" $
+  Lib.maxWeight SlowTests.testWeightBoard [(0,0),(0,1),(0,2),(0,3),(0,4),(0,5),(0,6),(0,7),(0,8)] @?= (0,8)
   ]
 
 captureBoard :: [[Board.Board]]
@@ -126,5 +133,4 @@ captureTests = testGroup "capture tests"
   testCase "White 2 3 capture backward left" $
     Lib.move 2 3 Lib.BTakeLeft (fromLists captureBoard) @?= Just (captureWhite 2 3 3)
 
-  -- collision tests
   ]

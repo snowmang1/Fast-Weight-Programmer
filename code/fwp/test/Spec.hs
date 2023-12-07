@@ -81,3 +81,13 @@ winTests = testGroup "tests for win condition"
   testCase "White won game" $
   Lib.winGame (fromLists whiteWinBoard) @?= Just Board.White
   ]
+
+oneMoveBoard :: [[Board.Board]]
+oneMoveBoard = [[Board.Empty,   Board.Red, Board.Empty,   Board.Red,  Board.Empty,   Board.Red,  Board.Empty,    Board.Red],
+                [Board.Red,   Board.Empty,   Board.Red, Board.Empty,    Board.Red, Board.Empty,    Board.Red,  Board.Empty],
+                [Board.Empty,   Board.Red, Board.Empty,   Board.Red,  Board.Empty,   Board.Red,  Board.Empty,    Board.Red],
+                [Board.Empty, Board.Empty, Board.Empty, Board.Empty,  Board.Empty, Board.Empty,  Board.Empty,  Board.Empty],
+                [Board.White, Board.Empty, Board.Empty, Board.Empty,   Board.Empty,Board.Empty,  Board.Empty,  Board.Empty],
+                [Board.Empty, Board.Empty, Board.White, Board.Empty,   Board.White,Board.Empty,  Board.White,  Board.Empty],
+                [Board.Empty, Board.White, Board.Empty, Board.White,   Board.Empty,Board.White,  Board.Empty,  Board.White],
+                [Board.White, Board.Empty,  Board.White,Board.Empty,   Board.White,Board.Empty,  Board.White, Board.Empty]]

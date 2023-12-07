@@ -1,12 +1,13 @@
 module Lib
     (
-    someFunc,
     setBoard,
     mapMat,
     move,
     MoveType (Forward, Backward, FTakeRight, FTakeLeft, BTakeLeft, BTakeRight),
     Weights,
     winGame,
+    getBestMove,
+    maxWeight
     ) where
 
 import Board (Board (Red, White, WhiteKing, RedKing, Empty))
@@ -16,9 +17,6 @@ data MoveType = Forward | Backward | FTakeRight | FTakeLeft | BTakeLeft | BTakeR
 
 -- | forward backward cap-left cap-right cap-back-left cap-back-right
 type Weights = (Float, Float, Float, Float, Float, Float)
-
-someFunc :: IO ()
-someFunc = putStrLn "not ready for testing"
 
 oscilateRow :: Int -> Int -> Bool -> [Board] -> [Board]
 oscilateRow _ 0 _ ac = reverse ac
@@ -106,6 +104,21 @@ move r c BTakeLeft m | x == RedKing && canTake r c =
                         where x = getElem r c m
                               canTake row col = row <= 8 && col <= 8 && row >= 1 && col >= 1 &&
                                 (getElem (row-1) (col-1) m /= Empty || getElem (row-1) (col+1) m /= Empty)
+
+-- \ function for getting the current best move for the specified color
+getBestMove :: Matrix Weights -> Matrix Board -> Board -> (Int,Int)
+getBestMove w b c
+  | c == White  = maxWeight w (findW w b)
+  | c == Red    = maxWeight w (findR w b)
+  | otherwise   = undefined where
+    findR w' b' = undefined
+    findW w' b' = undefined
+
+maxWeight :: Matrix Weights -> [(Int,Int)] -> (Int,Int)
+maxWeight w l = maxW' (compile w l []) where
+  compile w' l' rl = compile w' (tail l') ((head l',uncurry getElem (head l') (head l') w'):rl)
+  compile _ [] rl = rl
+  maxW' = undefined
 
 winGame :: Matrix Board -> Maybe Board
 winGame m = aux ((countWhite :: Int -> Int -> Int -> Matrix Board -> Int) 0 1 1 m)
