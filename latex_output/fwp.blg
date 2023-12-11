@@ -1,22 +1,22 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'latex_output/fwp.blg'
-[36] biber:340> INFO - === Wed Dec  6, 2023, 16:17:33
-[44] Biber.pm:419> INFO - Reading 'latex_output/fwp.bcf'
-[82] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[90] Biber.pm:4419> INFO - Processing section 0
-[96] Biber.pm:4610> INFO - Looking for bibtex file 'bib/refs.bib' for section 0
-[102] bibtex.pm:1713> INFO - LaTeX decoding ...
-[178] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/refs.bib'
-[416] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[37] biber:340> INFO - === Mon Dec 11, 2023, 13:55:26
+[46] Biber.pm:419> INFO - Reading 'latex_output/fwp.bcf'
+[85] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[93] Biber.pm:4419> INFO - Processing section 0
+[98] Biber.pm:4610> INFO - Looking for bibtex file 'bib/refs.bib' for section 0
+[105] bibtex.pm:1713> INFO - LaTeX decoding ...
+[182] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/refs.bib'
 [416] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[416] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
 [416] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
 [416] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[449] bbl.pm:660> INFO - Writing 'latex_output/fwp.bbl' with encoding 'UTF-8'
-[466] bbl.pm:763> INFO - Output to latex_output/fwp.bbl
-[466] Biber.pm:131> WARN - ISBN '978-3-540-54396-1 978-3-540-47599-6' in entry 'goos_functional_1991' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:131> WARN - ISBN '978-3-540-19839-0 978-1-4471-2063-6' in entry 'schmidhuber_self-referential_1993' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:131> WARN - ISBN '978-3-030-05317-8 978-3-030-05318-5' in entry 'hutter_2019' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:131> WARN - ISBN '978-1-4613-7527-2 978-1-4615-5529-2' in entry 'schmidhuber_1998' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:131> WARN - ISBN '978-3-540-25260-3 978-3-540-32274-0' in entry 'schmidhuber_gomachines_2005' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:131> WARN - ISBN '978-94-91216-61-9 978-94-91216-62-6' in entry 'steunebrink_towards_2012' is invalid - run biber with '--validate_datamodel' for details.
-[466] Biber.pm:133> INFO - WARNINGS: 6
+[450] bbl.pm:660> INFO - Writing 'latex_output/fwp.bbl' with encoding 'UTF-8'
+[468] bbl.pm:763> INFO - Output to latex_output/fwp.bbl
+[468] Biber.pm:131> WARN - ISBN '978-1-4613-7527-2 978-1-4615-5529-2' in entry 'schmidhuber_1998' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:131> WARN - ISBN '978-3-030-05317-8 978-3-030-05318-5' in entry 'hutter_2019' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:131> WARN - ISBN '978-3-540-54396-1 978-3-540-47599-6' in entry 'goos_functional_1991' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:131> WARN - ISBN '978-94-91216-61-9 978-94-91216-62-6' in entry 'steunebrink_towards_2012' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:131> WARN - ISBN '978-3-540-25260-3 978-3-540-32274-0' in entry 'schmidhuber_gomachines_2005' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:131> WARN - ISBN '978-3-540-19839-0 978-1-4471-2063-6' in entry 'schmidhuber_self-referential_1993' is invalid - run biber with '--validate_datamodel' for details.
+[468] Biber.pm:133> INFO - WARNINGS: 6
